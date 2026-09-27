@@ -24,8 +24,8 @@ const CONFIG = {
     }
   },
   mapLinks: {
-    church: "https://www.google.com/maps/search/?api=1&query=St.%20George%20Church%20Mar%20Girgis%20Church%20Assiut%20Egypt",
-    reception: "https://www.google.com/maps/search/?api=1&query=Aurora%20Plaza%20Hall%20Assiut%20Egypt"
+    church: "https://maps.app.goo.gl/ZPXZPrNPKFqof9EY7?g_st=aw",
+    reception: "https://maps.app.goo.gl/nb829kNoNFwYN7qz7?g_st=aw"
   },
   story: [
     {
@@ -177,8 +177,8 @@ const I18N = {
       receptionLabel: "Reception",
       ceremonyTitle: "The Holy Matrimony",
       receptionTitle: "The Reception",
-      churchLocation: "St. George Church (Mar Girgis), Assiut, Egypt",
-      receptionLocation: "Aurora Plaza Hall, Assiut",
+      churchLocation: "Church of the Great Saint Mar-George in Assiut",
+      receptionLocation: "Royal Plaza Wedding Hall - Royal Hotel, Assiut",
       ceremonyTime: "10:00 PM",
       receptionTime: "TIME TO BE ANNOUNCED",
       ceremonyDescription: "The wedding ceremony of Marcleno Mensa and Reta Atef.",
@@ -246,8 +246,8 @@ const I18N = {
       receptionLabel: "الاحتفال",
       ceremonyTitle: "سر الزيجة المقدس",
       receptionTitle: "حفل الاستقبال",
-      churchLocation: "كنيسة مارجرجس، أسيوط، مصر",
-      receptionLocation: "قاعة أورورا بلازا، أسيوط",
+      churchLocation: "كنيسة الشهيد العظيم مارجرجس بأسيوط",
+      receptionLocation: "قاعة رويال بلازا - فندق رويال، أسيوط",
       ceremonyTime: "١٠:٠٠ مساءً",
       receptionTime: "سيتم الإعلان عن الموعد",
       ceremonyDescription: "إكليل ماركلينو منسي وريتا عاطف.",
