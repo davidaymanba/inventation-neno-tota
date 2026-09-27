@@ -9,7 +9,7 @@ const CONFIG = {
   receptionTime: "TIME TO BE ANNOUNCED",
   timeZone: "Africa/Cairo",
   rsvpPhone: "201000000000",
-  musicPath: "",
+  musicPath: "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1",
   heroPhoto: "صورة الخطوبة.jpeg",
   heroPortraits: {
     groom: {
@@ -118,9 +118,158 @@ const CONFIG = {
   ]
 };
 
+const I18N = {
+  en: {
+    dir: "ltr",
+    title: "Marcleno & Reta | Wedding Invitation",
+    description: "Together with their families, Marcleno Mensa and Reta Atef invite you to celebrate their wedding day in Assiut, Egypt.",
+    languageKicker: "Wedding Invitation",
+    languageTitle: "Choose Your Language",
+    doorInstruction: "Knock three times to open",
+    heroEyebrow: "Together with their families",
+    heroNames: 'Marcleno <span>&amp;</span> Reta',
+    displayDate: "OCTOBER 3, 2026",
+    scroll: "Scroll",
+    featuredVerse: "This is the day which the LORD hath made; we will rejoice and be glad in it.",
+    featuredReference: "Psalm 118:24",
+    groomName: "Marcleno",
+    brideName: "Reta",
+    countdownEyebrow: "Until the day",
+    countdownTitle: "The Countdown",
+    countdownUnits: ["Days", "Hours", "Minutes", "Seconds"],
+    storyEyebrow: "Our Story",
+    storyTitle: "A Love Written With Grace",
+    scriptureLabel: "Scripture verses",
+    eventsEyebrow: "The Celebration",
+    eventsTitle: "Event Details",
+    galleryEyebrow: "Memories",
+    galleryTitle: "Gallery",
+    rsvpEyebrow: "RSVP",
+    rsvpTitle: "Celebrate With Us",
+    rsvpCopy: "We cannot wait to share this blessed day with you.",
+    rsvpButton: "RSVP on WhatsApp",
+    rsvpMessage: "Hello, we are delighted to celebrate the wedding of Marcleno and Reta. Please count us in.",
+    footerCopy: "We can't wait to celebrate with you",
+    footerVerse: "And above all these things put on charity, which is the bond of perfectness.",
+    lightboxClose: "Close photo viewer",
+    lightboxPrev: "Previous photo",
+    lightboxNext: "Next photo",
+    openPhoto: "Open photo",
+    photoMemory: "Wedding memory",
+    story: [
+      { title: "How We Met", date: "The first hello", text: "A quiet beginning, held by family, prayer, and the kind of joy that grows gently before anyone can name it." },
+      { title: "The First Sitting", date: "3 February 2025", text: "A simple conversation became a remembered day, where ease, laughter, and grace made room for something beautiful." },
+      { title: "First Photo Together", date: "A favorite beginning", text: "The first picture together became more than a keepsake; it became the opening page of a story they would keep choosing." },
+      { title: "Growing Together", date: "Every shared walk", text: "Through ordinary outings and small celebrations, love became steadier, warmer, and easier to recognize." },
+      { title: "The Proposal", date: "A promised yes", text: "Surrounded by light, blessing, and family joy, the promise became clear: together, with God before them." },
+      { title: "Forever Begins", date: "With thanksgiving", text: "Now they step toward the altar, grateful for every chapter behind them and every chapter still to come." }
+    ],
+    scriptureVerses: [
+      { text: "And now abideth faith, hope, charity, these three; but the greatest of these is charity.", ref: "1 Corinthians 13:13" },
+      { text: "What therefore God hath joined together, let not man put asunder.", ref: "Mark 10:9" },
+      { text: "A threefold cord is not quickly broken.", ref: "Ecclesiastes 4:12" },
+      { text: "Many waters cannot quench love, neither can the floods drown it.", ref: "Song of Solomon 8:7" },
+      { text: "And above all these things put on charity, which is the bond of perfectness.", ref: "Colossians 3:14" },
+      { text: "Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.", ref: "Genesis 2:24" }
+    ],
+    events: {
+      ceremonyLabel: "Ceremony",
+      receptionLabel: "Reception",
+      ceremonyTitle: "The Holy Matrimony",
+      receptionTitle: "The Reception",
+      churchLocation: "St. George Church (Mar Girgis), Assiut, Egypt",
+      receptionLocation: "Aurora Plaza Hall, Assiut",
+      ceremonyTime: "10:00 PM",
+      receptionTime: "TIME TO BE ANNOUNCED",
+      ceremonyDescription: "The wedding ceremony of Marcleno Mensa and Reta Atef.",
+      receptionDescription: "The wedding reception of Marcleno Mensa and Reta Atef.",
+      map: "View on Map",
+      ics: "Add .ics",
+      google: "Google Calendar"
+    }
+  },
+  ar: {
+    dir: "rtl",
+    title: "دعوة زفاف ماركلينو وريتا",
+    description: "بكل فرح، يدعوكم ماركلينو منسي وريتا عاطف لمشاركتهم يوم زفافهم في أسيوط.",
+    languageKicker: "دعوة زفاف",
+    languageTitle: "اختار اللغة",
+    doorInstruction: "اخبط ٣ دقات لفتح الدعوة",
+    heroEyebrow: "مع عائلتيهما",
+    heroNames: 'ماركلينو <span>&amp;</span> ريتا',
+    displayDate: "٣ أكتوبر ٢٠٢٦",
+    scroll: "انزل",
+    featuredVerse: "هذا هو اليوم الذي صنعه الرب، نبتهج ونفرح فيه.",
+    featuredReference: "مزمور ١١٨: ٢٤",
+    groomName: "ماركلينو",
+    brideName: "ريتا",
+    countdownEyebrow: "باقي على اليوم",
+    countdownTitle: "العد التنازلي",
+    countdownUnits: ["يوم", "ساعة", "دقيقة", "ثانية"],
+    storyEyebrow: "حكايتنا",
+    storyTitle: "محبة مكتوبة بنعمة",
+    scriptureLabel: "آيات كتابية",
+    eventsEyebrow: "الاحتفال",
+    eventsTitle: "تفاصيل اليوم",
+    galleryEyebrow: "ذكريات",
+    galleryTitle: "المعرض",
+    rsvpEyebrow: "تأكيد الحضور",
+    rsvpTitle: "نفرح بوجودكم",
+    rsvpCopy: "مستنيين نفرح ونحتفل معاكم في اليوم المبارك ده.",
+    rsvpButton: "تأكيد الحضور على واتساب",
+    rsvpMessage: "أهلاً، سعداء بمشاركة فرح ماركلينو وريتا. برجاء تسجيل حضورنا.",
+    footerCopy: "مستنيين نفرح معاكم",
+    footerVerse: "وعلى جميع هذه البسوا المحبة التي هي رباط الكمال.",
+    lightboxClose: "إغلاق عارض الصور",
+    lightboxPrev: "الصورة السابقة",
+    lightboxNext: "الصورة التالية",
+    openPhoto: "افتح الصورة",
+    photoMemory: "ذكرى من يومنا",
+    story: [
+      { title: "إزاي اتقابلنا", date: "أول سلام", text: "بداية هادية مليانة بركة، وسط العيلة والصلاة وفرحة كانت بتكبر بهدوء." },
+      { title: "أول قعدة", date: "٣ فبراير ٢٠٢٥", text: "قعدة بسيطة بقت يوم مميز، فيها راحة وضحك ونعمة فتحت باب حكاية جميلة." },
+      { title: "أول صورة لينا", date: "بداية غالية", text: "أول صورة جمعتنا فضلت ذكرى حلوة وبداية صفحة جديدة بنختار نكملها مع بعض." },
+      { title: "كبرنا مع بعض", date: "كل خروجة وكل ضحكة", text: "في التفاصيل الصغيرة واللحظات العادية، المحبة بقت أوضح وأثبت وأدفى." },
+      { title: "الخطوبة", date: "وعد وفرحة", text: "وسط النور وفرحة الأهل وبركة ربنا، الوعد بقى واضح: نكمل الطريق مع بعض." },
+      { title: "بداية للأبد", date: "بشكر وفرح", text: "دلوقتي بنقرب من يوم الإكليل بقلوب مليانة شكر لكل خطوة فاتت ولكل اللي جاي." }
+    ],
+    scriptureVerses: [
+      { text: "أما الآن فيثبت: الإيمان والرجاء والمحبة، هذه الثلاثة؛ ولكن أعظمهن المحبة.", ref: "١ كورنثوس ١٣: ١٣" },
+      { text: "فالذي جمعه الله لا يفرقه إنسان.", ref: "مرقس ١٠: ٩" },
+      { text: "والخيط المثلوث لا ينقطع سريعًا.", ref: "جامعة ٤: ١٢" },
+      { text: "مياه كثيرة لا تستطيع أن تطفئ المحبة، والسيول لا تغمرها.", ref: "نشيد الأنشاد ٨: ٧" },
+      { text: "وعلى جميع هذه البسوا المحبة التي هي رباط الكمال.", ref: "كولوسي ٣: ١٤" },
+      { text: "لذلك يترك الرجل أباه وأمه ويلتصق بامرأته ويكونان جسدًا واحدًا.", ref: "تكوين ٢: ٢٤" }
+    ],
+    events: {
+      ceremonyLabel: "الإكليل",
+      receptionLabel: "الاحتفال",
+      ceremonyTitle: "سر الزيجة المقدس",
+      receptionTitle: "حفل الاستقبال",
+      churchLocation: "كنيسة مارجرجس، أسيوط، مصر",
+      receptionLocation: "قاعة أورورا بلازا، أسيوط",
+      ceremonyTime: "١٠:٠٠ مساءً",
+      receptionTime: "سيتم الإعلان عن الموعد",
+      ceremonyDescription: "إكليل ماركلينو منسي وريتا عاطف.",
+      receptionDescription: "حفل استقبال زفاف ماركلينو منسي وريتا عاطف.",
+      map: "افتح الخريطة",
+      ics: "أضف للتقويم",
+      google: "تقويم Google"
+    }
+  }
+};
+
 const $ = (selector) => document.querySelector(selector);
 const encodePath = (file) => `./${encodeURIComponent(file)}`;
 const weddingDate = () => new Date(`${CONFIG.weddingDate}T${CONFIG.ceremonyTime}:00+02:00`);
+let currentLang = "en";
+let countdownTimer;
+let verseTimer;
+const tr = () => I18N[currentLang];
+const formatNumber = (value, minDigits = 1) => {
+  const padded = String(value).padStart(minDigits, "0");
+  return currentLang === "ar" ? padded.replace(/\d/g, (digit) => "٠١٢٣٤٥٦٧٨٩"[digit]) : padded;
+};
 
 document.body.classList.add("locked");
 
@@ -132,6 +281,69 @@ const doorVideo = $("#doorVideo");
 let knockCount = 0;
 let opened = false;
 let openingFallback;
+
+function setText(selector, value) {
+  const node = $(selector);
+  if (node) node.textContent = value;
+}
+
+function setHtml(selector, value) {
+  const node = $(selector);
+  if (node) node.innerHTML = value;
+}
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  const text = tr();
+  document.documentElement.lang = lang;
+  document.documentElement.dir = text.dir;
+  document.body.dataset.lang = lang;
+  document.title = text.title;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", text.description);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", text.title);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", text.description);
+  document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", text.title);
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", text.description);
+
+  setText("#doorInstruction", text.doorInstruction);
+  doorKnocker.setAttribute("aria-label", text.doorInstruction);
+  setText("#heroEyebrow", text.heroEyebrow);
+  setHtml("#heroNames", text.heroNames);
+  setText("#heroDate", text.displayDate);
+  setText("#scrollCue", text.scroll);
+  $("#scrollCue").setAttribute("aria-label", text.scroll);
+  setText("#featuredVerse", text.featuredVerse);
+  setText("#featuredReference", text.featuredReference);
+  setText("#groomCaption", text.groomName);
+  setText("#brideCaption", text.brideName);
+  setText("#countdownEyebrow", text.countdownEyebrow);
+  setText("#countdownTitle", text.countdownTitle);
+  setText("#storyEyebrow", text.storyEyebrow);
+  setText("#storyTitle", text.storyTitle);
+  document.querySelector(".scripture-slider")?.setAttribute("aria-label", text.scriptureLabel);
+  setText("#eventsEyebrow", text.eventsEyebrow);
+  setText("#eventsTitle", text.eventsTitle);
+  setText("#galleryEyebrow", text.galleryEyebrow);
+  setText("#galleryTitle", text.galleryTitle);
+  setText("#rsvpEyebrow", text.rsvpEyebrow);
+  setText("#rsvpTitle", text.rsvpTitle);
+  setText("#rsvpCopy", text.rsvpCopy);
+  setText("#rsvpButton", text.rsvpButton);
+  setText("#footerCopy", text.footerCopy);
+  setText("#footerDate", text.displayDate);
+  setText("#footerVerse", text.footerVerse);
+  $("#lightboxClose").setAttribute("aria-label", text.lightboxClose);
+  $("#lightboxPrev").setAttribute("aria-label", text.lightboxPrev);
+  $("#lightboxNext").setAttribute("aria-label", text.lightboxNext);
+
+  renderCountdown();
+  renderStory();
+  renderVerses();
+  renderEvents();
+  renderGallery();
+  initRsvp();
+  initReveal();
+}
 
 function revealInvitation() {
   if (opened) return;
@@ -191,6 +403,9 @@ doorVideo.addEventListener("ended", () => {
   revealInvitation();
 });
 doorVideo.addEventListener("error", () => setTimeout(revealInvitation, 700));
+doorVideo.addEventListener("loadeddata", () => {
+  doorScreen.classList.add("video-ready");
+});
 
 function initHero() {
   const hero = CONFIG.photos.find((photo) => photo.file === CONFIG.heroPhoto) || CONFIG.photos[0];
@@ -206,14 +421,13 @@ function initHero() {
   bridePortrait.src = encodePath(bride.file);
   bridePortrait.alt = bride.alt;
   bridePortrait.style.objectPosition = bride.position;
-  $("#heroDate").textContent = CONFIG.displayDate;
-  $("#footerDate").textContent = CONFIG.displayDate;
 }
 
 function renderCountdown() {
+  clearInterval(countdownTimer);
   const target = weddingDate();
   const countdown = $("#countdown");
-  const units = ["Days", "Hours", "Minutes", "Seconds"];
+  const units = tr().countdownUnits;
   countdown.innerHTML = units.map((unit) => `<div class="count-box"><strong>0</strong><span>${unit}</span></div>`).join("");
   const boxes = [...countdown.querySelectorAll("strong")];
 
@@ -226,26 +440,27 @@ function renderCountdown() {
       Math.floor(diff / 1000) % 60
     ];
     boxes.forEach((box, index) => {
-      box.textContent = String(values[index]).padStart(index === 0 ? 1 : 2, "0");
+      box.textContent = formatNumber(values[index], index === 0 ? 1 : 2);
     });
   }
 
   tick();
-  setInterval(tick, 1000);
+  countdownTimer = setInterval(tick, 1000);
 }
 
 function renderStory() {
-  $("#storyTimeline").innerHTML = CONFIG.story.map((chapter, index) => {
-    const photo = CONFIG.photos.find((item) => item.file === chapter.photo);
+  $("#storyTimeline").innerHTML = CONFIG.story.map((chapterConfig, index) => {
+    const chapter = tr().story[index];
+    const photo = CONFIG.photos.find((item) => item.file === chapterConfig.photo);
     return `
       <article class="chapter reveal">
         <div class="chapter-copy">
-          <span class="chapter-number">${String(index + 1).padStart(2, "0")} / ${chapter.date}</span>
+          <span class="chapter-number">${formatNumber(index + 1, 2)} / ${chapter.date}</span>
           <h3>${chapter.title}</h3>
           <p>${chapter.text}</p>
         </div>
         <figure class="chapter-photo">
-          <img src="${encodePath(chapter.photo)}" alt="${photo?.alt || chapter.title}" loading="lazy" decoding="async" style="object-position:${photo?.position || "50% 35%"}">
+          <img src="${encodePath(chapterConfig.photo)}" alt="${chapter.title}" loading="lazy" decoding="async" style="object-position:${photo?.position || "50% 35%"}">
         </figure>
       </article>
     `;
@@ -253,20 +468,22 @@ function renderStory() {
 }
 
 function renderVerses() {
+  clearInterval(verseTimer);
   const slider = $("#verseSlider");
   const dots = $("#sliderDots");
-  slider.innerHTML = CONFIG.scriptureVerses.map((verse, index) => `
+  slider.innerHTML = tr().scriptureVerses.map((verse, index) => `
     <div class="verse-slide ${index === 0 ? "active" : ""}">
       <blockquote>${verse.text}</blockquote>
       <cite>${verse.ref}</cite>
     </div>
   `).join("");
-  dots.innerHTML = CONFIG.scriptureVerses.map((_, index) => `<span class="${index === 0 ? "active" : ""}"></span>`).join("");
+  dots.innerHTML = tr().scriptureVerses.map((_, index) => `<span class="${index === 0 ? "active" : ""}"></span>`).join("");
 
   let current = 0;
-  setInterval(() => {
+  verseTimer = setInterval(() => {
     const slides = [...slider.children];
     const dotItems = [...dots.children];
+    if (!slides.length) return;
     slides[current].classList.remove("active");
     dotItems[current].classList.remove("active");
     current = (current + 1) % slides.length;
@@ -298,7 +515,7 @@ function downloadIcs(event) {
     `DTSTAMP:${toCalendarDate(new Date())}`,
     `DTSTART:${toCalendarDate(start)}`,
     `DTEND:${toCalendarDate(end)}`,
-    `SUMMARY:${event.title} - ${CONFIG.displayNames}`,
+    `SUMMARY:${event.title} - ${tr().groomName} & ${tr().brideName}`,
     `LOCATION:${event.location}`,
     `DESCRIPTION:${event.description}`,
     "END:VEVENT",
@@ -325,35 +542,38 @@ function googleCalendarUrl(event) {
 }
 
 function renderEvents() {
+  const eventText = tr().events;
   const events = [
     {
       kind: "ceremony",
-      title: "The Holy Matrimony",
-      location: "St. George Church (Mar Girgis), Assiut, Egypt",
-      time: CONFIG.ceremonyDisplayTime,
+      label: eventText.ceremonyLabel,
+      title: eventText.ceremonyTitle,
+      location: eventText.churchLocation,
+      time: eventText.ceremonyTime,
       map: CONFIG.mapLinks.church,
-      description: "The wedding ceremony of Marcleno Mensa and Reta Atef."
+      description: eventText.ceremonyDescription
     },
     {
       kind: "reception",
-      title: "The Reception",
-      location: "Aurora Plaza Hall, Assiut",
-      time: CONFIG.receptionTime,
+      label: eventText.receptionLabel,
+      title: eventText.receptionTitle,
+      location: eventText.receptionLocation,
+      time: eventText.receptionTime,
       map: CONFIG.mapLinks.reception,
-      description: "The wedding reception of Marcleno Mensa and Reta Atef."
+      description: eventText.receptionDescription
     }
   ];
 
   $("#eventGrid").innerHTML = events.map((event, index) => `
     <article class="event-card reveal">
-      <p class="eyebrow">${index === 0 ? "Ceremony" : "Reception"}</p>
+      <p class="eyebrow">${event.label}</p>
       <h3>${event.title}</h3>
       <p>${event.location}</p>
       <p>${event.time}</p>
       <div class="event-actions">
-        <a class="text-button" href="${event.map}" target="_blank" rel="noreferrer">View on Map</a>
-        <button class="text-button" data-ics="${event.kind}" type="button">Add .ics</button>
-        <a class="text-button" href="${googleCalendarUrl(event)}" target="_blank" rel="noreferrer">Google Calendar</a>
+        <a class="text-button" href="${event.map}" target="_blank" rel="noreferrer">${eventText.map}</a>
+        <button class="text-button" data-ics="${event.kind}" type="button">${eventText.ics}</button>
+        <a class="text-button" href="${googleCalendarUrl(event)}" target="_blank" rel="noreferrer">${eventText.google}</a>
       </div>
     </article>
   `).join("");
@@ -367,8 +587,8 @@ function renderEvents() {
 function renderGallery() {
   const gallery = $("#gallery");
   gallery.innerHTML = CONFIG.photos.map((photo, index) => `
-    <button class="gallery-item ${photo.orientation}" type="button" data-index="${index}" aria-label="Open photo ${index + 1}">
-      <img src="${encodePath(photo.file)}" alt="${photo.alt}" loading="lazy" decoding="async" style="object-position:${photo.position}">
+    <button class="gallery-item ${photo.orientation}" type="button" data-index="${index}" aria-label="${tr().openPhoto} ${formatNumber(index + 1)}">
+      <img src="${encodePath(photo.file)}" alt="${tr().photoMemory}" loading="lazy" decoding="async" style="object-position:${photo.position}">
     </button>
   `).join("");
 
@@ -411,9 +631,9 @@ function moveLightbox(step) {
 function updateLightbox() {
   const photo = CONFIG.photos[activePhoto];
   lightboxImage.src = encodePath(photo.file);
-  lightboxImage.alt = photo.alt;
-  $("#lightboxCaption").textContent = photo.alt;
-  $("#photoCounter").textContent = `${activePhoto + 1} / ${CONFIG.photos.length}`;
+  lightboxImage.alt = tr().photoMemory;
+  $("#lightboxCaption").textContent = tr().photoMemory;
+  $("#photoCounter").textContent = `${formatNumber(activePhoto + 1)} / ${formatNumber(CONFIG.photos.length)}`;
 }
 
 $("#lightboxClose").addEventListener("click", closeLightbox);
@@ -437,7 +657,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 function initRsvp() {
-  const message = `Hello, we are delighted to celebrate the wedding of ${CONFIG.displayNames}. Please count us in.`;
+  const message = tr().rsvpMessage;
   $("#rsvpButton").href = `https://wa.me/${CONFIG.rsvpPhone}?text=${encodeURIComponent(message)}`;
 }
 
@@ -449,10 +669,24 @@ function initMusic() {
     return;
   }
   player.src = CONFIG.musicPath;
-  toggle.addEventListener("click", async () => {
-    if (player.paused) {
+  player.volume = 0.72;
+
+  const startMusic = async () => {
+    try {
       await player.play();
       toggle.setAttribute("aria-pressed", "true");
+    } catch (error) {
+      toggle.setAttribute("aria-pressed", "false");
+    }
+  };
+
+  startMusic();
+  document.addEventListener("pointerdown", startMusic, { once: true });
+  document.addEventListener("keydown", startMusic, { once: true });
+
+  toggle.addEventListener("click", async () => {
+    if (player.paused) {
+      await startMusic();
     } else {
       player.pause();
       toggle.setAttribute("aria-pressed", "false");
@@ -478,11 +712,6 @@ function initReveal() {
 }
 
 initHero();
-renderCountdown();
-renderStory();
-renderVerses();
-renderEvents();
-renderGallery();
-initRsvp();
+applyLanguage("en");
+doorScreen.classList.add("language-selected");
 initMusic();
-initReveal();

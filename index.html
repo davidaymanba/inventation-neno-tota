@@ -15,13 +15,13 @@
     <meta name="twitter:image" content="%D8%B5%D9%88%D8%B1%20%D8%AE%D8%B7%D9%88%D8%A8%D8%AA%D9%86%D8%A7.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Noto+Naskh+Arabic:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
     <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="%231C2230"/><text x="32" y="39" text-anchor="middle" font-family="serif" font-size="20" fill="%23C8A96A">M%26R</text></svg>'>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="door-screen" id="doorScreen">
-      <video class="door-video" id="doorVideo" src="door.mp4" preload="auto" playsinline></video>
+      <video class="door-video" id="doorVideo" src="door.mp4?v=2" poster="door-poster.jpg?v=2" preload="auto" playsinline muted></video>
       <button class="door-knocker" id="doorKnocker" type="button" aria-label="Knock three times to open the invitation">
         <span class="door-monogram">M &amp; R</span>
         <span class="hand-knock" aria-hidden="true">
@@ -34,7 +34,7 @@
             <path d="M25 22c-3 3-5 7-5 12" />
           </svg>
         </span>
-        <span class="door-instruction">Knock three times to open</span>
+        <span class="door-instruction" id="doorInstruction">Knock three times to open</span>
         <span class="knock-dots" aria-hidden="true">
           <span></span>
           <span></span>
@@ -44,15 +44,15 @@
     </div>
 
     <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle background music" aria-pressed="false">Music</button>
-    <audio id="musicPlayer" preload="none" loop></audio>
+    <audio id="musicPlayer" preload="auto" loop autoplay></audio>
 
     <main id="invitation" class="invitation" aria-hidden="true">
       <section class="hero" id="top" aria-label="Wedding invitation cover">
         <div class="hero-bg" id="heroBg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content reveal">
-          <p class="eyebrow">Together with their families</p>
-          <h1>Marcleno <span>&amp;</span> Reta</h1>
+          <p class="eyebrow" id="heroEyebrow">Together with their families</p>
+          <h1 id="heroNames">Marcleno <span>&amp;</span> Reta</h1>
           <p class="hero-date" id="heroDate">Date to be announced</p>
           <svg class="ornament" viewBox="0 0 220 24" aria-hidden="true">
             <path d="M12 12h76" />
@@ -61,13 +61,13 @@
             <path d="M100 12c5-7 15-7 20 0c-5 7-15 7-20 0Z" />
           </svg>
         </div>
-        <a class="scroll-cue" href="#verse" aria-label="Scroll to invitation details">Scroll</a>
+        <a class="scroll-cue" id="scrollCue" href="#verse" aria-label="Scroll to invitation details">Scroll</a>
       </section>
 
       <section class="section featured-verse" id="verse">
         <div class="section-inner narrow reveal">
-          <p class="scripture">This is the day which the LORD hath made; we will rejoice and be glad in it.</p>
-          <p class="reference">Psalm 118:24</p>
+          <p class="scripture" id="featuredVerse">This is the day which the LORD hath made; we will rejoice and be glad in it.</p>
+          <p class="reference" id="featuredReference">Psalm 118:24</p>
         </div>
       </section>
 
@@ -75,19 +75,19 @@
         <div class="section-inner portrait-inner reveal">
           <figure class="couple-portrait groom">
             <img id="portraitGroom" alt="">
-            <figcaption>Marcleno</figcaption>
+            <figcaption id="groomCaption">Marcleno</figcaption>
           </figure>
           <div class="portrait-mark" aria-hidden="true">&amp;</div>
           <figure class="couple-portrait bride">
             <img id="portraitBride" alt="">
-            <figcaption>Reta</figcaption>
+            <figcaption id="brideCaption">Reta</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="section countdown-section" aria-labelledby="countdownTitle">
         <div class="section-inner reveal">
-          <p class="eyebrow">Until the day</p>
+          <p class="eyebrow" id="countdownEyebrow">Until the day</p>
           <h2 id="countdownTitle">The Countdown</h2>
           <div class="countdown" id="countdown" aria-live="polite"></div>
         </div>
@@ -95,7 +95,7 @@
 
       <section class="section story-section" aria-labelledby="storyTitle">
         <div class="section-inner">
-          <p class="eyebrow reveal">Our Story</p>
+          <p class="eyebrow reveal" id="storyEyebrow">Our Story</p>
           <h2 id="storyTitle" class="reveal">A Love Written With Grace</h2>
           <div class="timeline" id="storyTimeline"></div>
         </div>
@@ -115,7 +115,7 @@
 
       <section class="section event-section" aria-labelledby="eventsTitle">
         <div class="section-inner">
-          <p class="eyebrow reveal">The Celebration</p>
+          <p class="eyebrow reveal" id="eventsEyebrow">The Celebration</p>
           <h2 id="eventsTitle" class="reveal">Event Details</h2>
           <div class="event-grid" id="eventGrid"></div>
         </div>
@@ -123,7 +123,7 @@
 
       <section class="section gallery-section" aria-labelledby="galleryTitle">
         <div class="section-inner wide">
-          <p class="eyebrow reveal">Memories</p>
+          <p class="eyebrow reveal" id="galleryEyebrow">Memories</p>
           <h2 id="galleryTitle" class="reveal">Gallery</h2>
           <div class="gallery" id="gallery"></div>
         </div>
@@ -131,9 +131,9 @@
 
       <section class="section rsvp-section" aria-labelledby="rsvpTitle">
         <div class="section-inner narrow reveal">
-          <p class="eyebrow">RSVP</p>
+          <p class="eyebrow" id="rsvpEyebrow">RSVP</p>
           <h2 id="rsvpTitle">Celebrate With Us</h2>
-          <p>We cannot wait to share this blessed day with you.</p>
+          <p id="rsvpCopy">We cannot wait to share this blessed day with you.</p>
           <a class="primary-button" id="rsvpButton" href="#" target="_blank" rel="noreferrer">RSVP on WhatsApp</a>
         </div>
       </section>
@@ -145,9 +145,9 @@
         <circle cx="70" cy="70" r="52" />
         <text x="70" y="82" text-anchor="middle">M &amp; R</text>
       </svg>
-      <p>We can't wait to celebrate with you</p>
+      <p id="footerCopy">We can't wait to celebrate with you</p>
       <p id="footerDate">Date to be announced</p>
-      <small>And above all these things put on charity, which is the bond of perfectness.</small>
+      <small id="footerVerse">And above all these things put on charity, which is the bond of perfectness.</small>
     </footer>
 
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">

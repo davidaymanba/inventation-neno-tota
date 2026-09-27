@@ -29,6 +29,10 @@ body {
   overflow-x: hidden;
 }
 
+body[data-lang="ar"] {
+  font-family: "Noto Naskh Arabic", "Jost", system-ui, sans-serif;
+}
+
 body.locked {
   overflow: hidden;
 }
@@ -51,7 +55,10 @@ a:focus-visible {
   display: grid;
   place-items: center;
   overflow: hidden;
-  background: #120b07;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(200, 169, 106, .16), transparent 34rem),
+    linear-gradient(135deg, #100c0a, #1C2230 52%, #090807),
+    #120b07;
   transition: opacity 1s ease, visibility 1s ease;
 }
 
@@ -75,6 +82,68 @@ a:focus-visible {
   pointer-events: none;
 }
 
+.language-screen {
+  position: relative;
+  z-index: 4;
+  width: min(88vw, 520px);
+  padding: clamp(1.5rem, 5vw, 2.6rem);
+  border: 1px solid rgba(200, 169, 106, .58);
+  background: rgba(8, 7, 6, .46);
+  color: var(--soft-white);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .26);
+  transition: opacity .45s ease, transform .45s ease, visibility .45s ease;
+}
+
+.door-screen.language-selected .language-screen {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-14px);
+  pointer-events: none;
+}
+
+.language-kicker {
+  margin: 0 0 .65rem;
+  color: var(--champagne-gold);
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.language-screen h2 {
+  margin: 0;
+  color: var(--soft-white);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.1rem, 8vw, 4rem);
+  font-weight: 300;
+  line-height: 1;
+}
+
+.language-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: 1.7rem;
+}
+
+.language-button {
+  min-height: 52px;
+  border: 1px solid rgba(200, 169, 106, .78);
+  background: rgba(255, 253, 248, .08);
+  color: var(--soft-white);
+  font: inherit;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.language-button.ar {
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 1.08rem;
+  letter-spacing: 0;
+}
+
 .door-video {
   position: absolute;
   inset: 0;
@@ -82,6 +151,13 @@ a:focus-visible {
   height: 100%;
   object-fit: contain;
   object-position: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.door-screen.video-ready .door-video,
+.door-screen.opening .door-video {
+  opacity: 1;
 }
 
 .door-knocker {
@@ -102,7 +178,16 @@ a:focus-visible {
   color: var(--soft-white);
   box-shadow: none;
   cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: opacity .45s ease, transform .45s ease;
+}
+
+.door-screen.language-selected .door-knocker {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .door-knocker:hover,
@@ -161,6 +246,37 @@ a:focus-visible {
   letter-spacing: .16em;
   text-transform: uppercase;
   text-shadow: 0 4px 18px rgba(0, 0, 0, .62);
+}
+
+body[data-lang="ar"] .door-instruction,
+body[data-lang="ar"] .language-kicker,
+body[data-lang="ar"] .eyebrow,
+body[data-lang="ar"] .reference,
+body[data-lang="ar"] .hero-date,
+body[data-lang="ar"] .scroll-cue,
+body[data-lang="ar"] .count-box span,
+body[data-lang="ar"] .chapter-number,
+body[data-lang="ar"] .verse-slide cite,
+body[data-lang="ar"] .text-button,
+body[data-lang="ar"] .primary-button {
+  letter-spacing: 0;
+}
+
+body[data-lang="ar"] .language-screen h2,
+body[data-lang="ar"] h2,
+body[data-lang="ar"] .scripture,
+body[data-lang="ar"] .verse-slide blockquote,
+body[data-lang="ar"] .event-card h3 {
+  font-family: "Noto Naskh Arabic", serif;
+  font-weight: 500;
+}
+
+body[data-lang="ar"] h1,
+body[data-lang="ar"] .door-monogram,
+body[data-lang="ar"] .couple-portrait figcaption,
+body[data-lang="ar"] .portrait-mark,
+body[data-lang="ar"] .monogram-frame text {
+  font-family: "Aref Ruqaa Ink", serif;
 }
 
 .knock-dots {
