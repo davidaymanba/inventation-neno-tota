@@ -8,7 +8,6 @@ const CONFIG = {
   ceremonyDisplayTime: "10:00 PM",
   receptionTime: "TIME TO BE ANNOUNCED",
   timeZone: "Africa/Cairo",
-  rsvpPhone: "201000000000",
   musicPath: "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1",
   heroPhoto: "صورة الخطوبة.jpeg",
   heroPortraits: {
@@ -88,9 +87,7 @@ const CONFIG = {
     { file: " 2026-09-26 at 00.25.41.jpeg", orientation: "landscape", position: "47% 38%", section: "gallery", alt: "Family memory with Marcleno and Reta" },
     { file: " 2026-09-26 at 00.38.17.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
     { file: " Image 2026-09-26 at 00.25.54.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
-    { file: "2026-09-26 at 00.25.46.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
     { file: "2026-09-26 at 00.25.50.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
-    { file: "W 2026-09-26 at 00.43.23.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
     { file: "Wha 2026-09-26 at 00.39.08.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
     { file: "WhatsA 2026-09-26 at 00.28.14.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
     { file: "WhatsApp  2026-09-26 at 00.25.53.jpeg", orientation: "portrait", position: "50% 34%", section: "gallery", alt: "Wedding memory" },
@@ -144,13 +141,9 @@ const I18N = {
     eventsTitle: "Event Details",
     galleryEyebrow: "Memories",
     galleryTitle: "Gallery",
-    rsvpEyebrow: "RSVP",
-    rsvpTitle: "Celebrate With Us",
-    rsvpCopy: "We cannot wait to share this blessed day with you.",
-    rsvpButton: "RSVP on WhatsApp",
-    rsvpMessage: "Hello, we are delighted to celebrate the wedding of Marcleno and Reta. Please count us in.",
-    footerCopy: "We can't wait to celebrate with you",
-    footerVerse: "And above all these things put on charity, which is the bond of perfectness.",
+    closingEyebrow: "With Love",
+    closingTitle: "We'll Be Waiting For You",
+    closingCopy: "Your presence will make our joy complete.",
     lightboxClose: "Close photo viewer",
     lightboxPrev: "Previous photo",
     lightboxNext: "Next photo",
@@ -213,13 +206,9 @@ const I18N = {
     eventsTitle: "تفاصيل اليوم",
     galleryEyebrow: "ذكريات",
     galleryTitle: "المعرض",
-    rsvpEyebrow: "تأكيد الحضور",
-    rsvpTitle: "نفرح بوجودكم",
-    rsvpCopy: "مستنيين نفرح ونحتفل معاكم في اليوم المبارك ده.",
-    rsvpButton: "تأكيد الحضور على واتساب",
-    rsvpMessage: "أهلاً، سعداء بمشاركة فرح ماركلينو وريتا. برجاء تسجيل حضورنا.",
-    footerCopy: "مستنيين نفرح معاكم",
-    footerVerse: "وعلى جميع هذه البسوا المحبة التي هي رباط الكمال.",
+    closingEyebrow: "بكل محبة",
+    closingTitle: "هنستناكم",
+    closingCopy: "وجودكم معانا يكمل فرحتنا.",
     lightboxClose: "إغلاق عارض الصور",
     lightboxPrev: "الصورة السابقة",
     lightboxNext: "الصورة التالية",
@@ -275,7 +264,6 @@ document.body.classList.add("locked");
 
 const doorScreen = $("#doorScreen");
 const invitation = $("#invitation");
-const footer = $("#footer");
 const doorKnocker = $("#doorKnocker");
 const doorVideo = $("#doorVideo");
 let knockCount = 0;
@@ -325,13 +313,10 @@ function applyLanguage(lang) {
   setText("#eventsTitle", text.eventsTitle);
   setText("#galleryEyebrow", text.galleryEyebrow);
   setText("#galleryTitle", text.galleryTitle);
-  setText("#rsvpEyebrow", text.rsvpEyebrow);
-  setText("#rsvpTitle", text.rsvpTitle);
-  setText("#rsvpCopy", text.rsvpCopy);
-  setText("#rsvpButton", text.rsvpButton);
-  setText("#footerCopy", text.footerCopy);
-  setText("#footerDate", text.displayDate);
-  setText("#footerVerse", text.footerVerse);
+  setText("#closingEyebrow", text.closingEyebrow);
+  setText("#closingTitle", text.closingTitle);
+  setText("#closingCopy", text.closingCopy);
+  setText("#closingDate", text.displayDate);
   $("#lightboxClose").setAttribute("aria-label", text.lightboxClose);
   $("#lightboxPrev").setAttribute("aria-label", text.lightboxPrev);
   $("#lightboxNext").setAttribute("aria-label", text.lightboxNext);
@@ -341,7 +326,6 @@ function applyLanguage(lang) {
   renderVerses();
   renderEvents();
   renderGallery();
-  initRsvp();
   initReveal();
 }
 
@@ -350,9 +334,7 @@ function revealInvitation() {
   opened = true;
   doorScreen.classList.add("opened");
   invitation.classList.add("visible");
-  footer.classList.add("visible");
   invitation.setAttribute("aria-hidden", "false");
-  footer.setAttribute("aria-hidden", "false");
   document.body.classList.remove("locked");
 }
 
@@ -655,11 +637,6 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") moveLightbox(-1);
   if (event.key === "ArrowRight") moveLightbox(1);
 });
-
-function initRsvp() {
-  const message = tr().rsvpMessage;
-  $("#rsvpButton").href = `https://wa.me/${CONFIG.rsvpPhone}?text=${encodeURIComponent(message)}`;
-}
 
 function initMusic() {
   const player = $("#musicPlayer");
