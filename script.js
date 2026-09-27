@@ -671,6 +671,48 @@ function initMusic() {
   });
 }
 
+function initCursor() {
+  const cursor = $("#customCursor");
+  if (!cursor || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+  let x = window.innerWidth / 2;
+  let y = window.innerHeight / 2;
+  let ringX = x;
+  let ringY = y;
+  const dot = cursor.querySelector(".cursor-dot");
+  const ring = cursor.querySelector(".cursor-ring");
+
+  window.addEventListener("mousemove", (event) => {
+    x = event.clientX;
+    y = event.clientY;
+    cursor.classList.add("visible");
+    dot.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+  });
+
+  document.addEventListener("mouseover", (event) => {
+    if (event.target.closest("a, button, .gallery-item, .lightbox-nav, .lightbox-close")) {
+      cursor.classList.add("active");
+    }
+  });
+
+  document.addEventListener("mouseout", (event) => {
+    if (event.target.closest("a, button, .gallery-item, .lightbox-nav, .lightbox-close")) {
+      cursor.classList.remove("active");
+    }
+  });
+
+  window.addEventListener("mouseleave", () => cursor.classList.remove("visible"));
+
+  function animate() {
+    ringX += (x - ringX) * 0.18;
+    ringY += (y - ringY) * 0.18;
+    ring.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
 function initReveal() {
   const items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
@@ -692,3 +734,4 @@ initHero();
 applyLanguage("en");
 doorScreen.classList.add("language-selected");
 initMusic();
+initCursor();

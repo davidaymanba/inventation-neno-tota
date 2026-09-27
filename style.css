@@ -20,6 +20,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body,
+  a,
+  button {
+    cursor: none;
+  }
+}
+
 body {
   margin: 0;
   background: var(--ivory);
@@ -40,6 +49,58 @@ body.locked {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+.custom-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.custom-cursor.visible {
+  opacity: 1;
+}
+
+.cursor-ring,
+.cursor-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(200, 169, 106, .72);
+  box-shadow: 0 0 22px rgba(200, 169, 106, .22);
+  transition: width .18s ease, height .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.cursor-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--champagne-gold);
+}
+
+.custom-cursor.active .cursor-ring {
+  width: 54px;
+  height: 54px;
+  background: rgba(200, 169, 106, .12);
+  border-color: rgba(255, 253, 248, .8);
+}
+
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
 }
 
 button:focus-visible,
@@ -315,6 +376,9 @@ body[data-lang="ar"] .monogram-frame text {
   stroke: var(--champagne-gold);
   stroke-width: 1;
   stroke-linecap: round;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  animation: draw-ornament 2.8s ease 1s forwards;
 }
 
 .invitation {
@@ -413,6 +477,7 @@ h2 {
   font-size: clamp(1.1rem, 3.8vw, 1.7rem);
   letter-spacing: .16em;
   text-transform: uppercase;
+  animation: soft-pulse 4s ease-in-out infinite;
 }
 
 .scroll-cue {
@@ -435,12 +500,36 @@ h2 {
   height: 42px;
   margin: .65rem auto 0;
   background: linear-gradient(var(--champagne-gold), transparent);
+  animation: scroll-line 1.6s ease-in-out infinite;
 }
 
 .couple-portraits-section {
-  background: var(--soft-white);
-  padding-top: clamp(2.6rem, 6vw, 4.5rem);
-  padding-bottom: clamp(3rem, 7vw, 5rem);
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(200, 169, 106, .12), transparent 18rem),
+    radial-gradient(circle at 88% 72%, rgba(232, 217, 204, .52), transparent 20rem),
+    var(--soft-white);
+  padding-top: clamp(2.2rem, 5vw, 3.8rem);
+  padding-bottom: clamp(2.6rem, 6vw, 4.4rem);
+}
+
+.couple-portraits-section::before,
+.couple-portraits-section::after {
+  content: "";
+  position: absolute;
+  width: 9rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 169, 106, .72), transparent);
+  top: 50%;
+}
+
+.couple-portraits-section::before {
+  left: 4vw;
+}
+
+.couple-portraits-section::after {
+  right: 4vw;
 }
 
 .portrait-inner {
@@ -468,6 +557,12 @@ h2 {
   border-radius: 50%;
   box-shadow: 0 18px 48px rgba(28, 34, 48, .16);
   filter: saturate(.95) contrast(1.02);
+  transition: transform .6s ease, box-shadow .6s ease;
+}
+
+.couple-portrait:hover img {
+  transform: translateY(-6px) scale(1.035);
+  box-shadow: 0 24px 68px rgba(28, 34, 48, .22);
 }
 
 .couple-portrait figcaption {
@@ -488,7 +583,7 @@ h2 {
 }
 
 .section {
-  padding: clamp(4.5rem, 11vw, 8rem) 0;
+  padding: clamp(3.5rem, 8vw, 6.25rem) 0;
 }
 
 .section-inner {
@@ -507,7 +602,25 @@ h2 {
 
 .featured-verse,
 .scripture-slider {
-  background: var(--soft-white);
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(240, 238, 233, .82), rgba(255, 253, 248, 1), rgba(240, 238, 233, .82)),
+    var(--soft-white);
+}
+
+.featured-verse::before,
+.scripture-slider::before {
+  content: "M & R";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: rgba(200, 169, 106, .08);
+  font-family: "Pinyon Script", cursive;
+  font-size: clamp(7rem, 20vw, 16rem);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .scripture {
@@ -539,6 +652,13 @@ h2 {
   place-items: center;
   border: 1px solid rgba(168, 135, 63, .5);
   background: rgba(255, 253, 248, .48);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.count-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(168, 135, 63, .85);
+  box-shadow: 0 18px 44px rgba(28, 34, 48, .11);
 }
 
 .count-box strong {
@@ -569,6 +689,7 @@ h2 {
   left: 50%;
   width: 1px;
   background: linear-gradient(transparent, var(--champagne-gold), transparent);
+  animation: shimmer-line 3.8s ease-in-out infinite;
 }
 
 .chapter {
@@ -619,6 +740,13 @@ h2 {
   overflow: hidden;
   border: 1px solid rgba(200, 169, 106, .35);
   background: var(--blush-sand);
+  box-shadow: 0 20px 55px rgba(28, 34, 48, .12);
+  transition: transform .65s ease, box-shadow .65s ease;
+}
+
+.chapter:hover .chapter-photo {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 74px rgba(28, 34, 48, .18);
 }
 
 .chapter-photo img,
@@ -715,6 +843,13 @@ h2 {
   padding: clamp(1.4rem, 4vw, 2.4rem);
   border: 1px solid rgba(200, 169, 106, .45);
   background: rgba(255, 253, 248, .58);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200, 169, 106, .82);
+  box-shadow: 0 22px 56px rgba(28, 34, 48, .13);
 }
 
 .event-card h3 {
@@ -860,6 +995,7 @@ h2 {
   background: var(--blush-sand);
   cursor: zoom-in;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
 .gallery-item img {
@@ -964,6 +1100,25 @@ h2 {
   to { transform: scale(1.12); }
 }
 
+@keyframes draw-ornament {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes soft-pulse {
+  0%, 100% { opacity: .9; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-2px); }
+}
+
+@keyframes scroll-line {
+  0%, 100% { transform: scaleY(.65); opacity: .45; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+@keyframes shimmer-line {
+  0%, 100% { opacity: .45; }
+  50% { opacity: 1; }
+}
+
 @keyframes knock-shake {
   0%, 100% { transform: translateX(0); }
   35% { transform: translateX(-6px); }
@@ -1000,6 +1155,21 @@ h2 {
 }
 
 @media (max-width: 760px) {
+  .section {
+    padding: clamp(2.8rem, 9vw, 4rem) 0;
+  }
+
+  .couple-portraits-section::before,
+  .couple-portraits-section::after {
+    display: none;
+  }
+
+  .featured-verse::before,
+  .scripture-slider::before {
+    font-size: 6rem;
+    opacity: .7;
+  }
+
   .hero-bg {
     background-size: auto 88%;
   }
