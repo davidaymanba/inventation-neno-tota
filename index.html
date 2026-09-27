@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcleno & Reta | Wedding Invitation</title>
+    <meta name="description" content="Together with their families, Marcleno Mensa and Reta Atef invite you to celebrate their wedding day in Assiut, Egypt.">
+    <meta property="og:title" content="Marcleno & Reta | Wedding Invitation">
+    <meta property="og:description" content="Together with their families, Marcleno Mensa and Reta Atef invite you to celebrate their wedding day.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="%D8%B5%D9%88%D8%B1%20%D8%AE%D8%B7%D9%88%D8%A8%D8%AA%D9%86%D8%A7.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marcleno & Reta | Wedding Invitation">
+    <meta name="twitter:description" content="A wedding celebration in Assiut, Egypt.">
+    <meta name="twitter:image" content="%D8%B5%D9%88%D8%B1%20%D8%AE%D8%B7%D9%88%D8%A8%D8%AA%D9%86%D8%A7.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="%231C2230"/><text x="32" y="39" text-anchor="middle" font-family="serif" font-size="20" fill="%23C8A96A">M%26R</text></svg>'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="door-screen" id="doorScreen">
+      <video class="door-video" id="doorVideo" src="door.mp4" preload="auto" playsinline></video>
+      <button class="door-knocker" id="doorKnocker" type="button" aria-label="Knock three times to open the invitation">
+        <span class="door-monogram">M &amp; R</span>
+        <span class="hand-knock" aria-hidden="true">
+          <svg viewBox="0 0 90 90">
+            <path d="M47 13c4 0 7 3 7 7v20" />
+            <path d="M57 26c4 0 7 3 7 7v13" />
+            <path d="M67 35c4 0 7 3 7 7v20c0 13-10 23-24 23H38c-9 0-16-5-20-13l-7-16c-2-5 0-10 5-12c4-2 8 0 11 4l3 5V23c0-4 3-7 7-7s7 3 7 7v19" />
+            <path d="M44 21c0-4 3-8 7-8" />
+            <path d="M18 16c-5 4-8 10-8 17" />
+            <path d="M25 22c-3 3-5 7-5 12" />
+          </svg>
+        </span>
+        <span class="door-instruction">Knock three times to open</span>
+        <span class="knock-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle background music" aria-pressed="false">Music</button>
+    <audio id="musicPlayer" preload="none" loop></audio>
+
+    <main id="invitation" class="invitation" aria-hidden="true">
+      <section class="hero" id="top" aria-label="Wedding invitation cover">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Together with their families</p>
+          <h1>Marcleno <span>&amp;</span> Reta</h1>
+          <p class="hero-date" id="heroDate">Date to be announced</p>
+          <svg class="ornament" viewBox="0 0 220 24" aria-hidden="true">
+            <path d="M12 12h76" />
+            <path d="M132 12h76" />
+            <path d="M110 4c8 0 8 16 0 16s-8-16 0-16Z" />
+            <path d="M100 12c5-7 15-7 20 0c-5 7-15 7-20 0Z" />
+          </svg>
+        </div>
+        <a class="scroll-cue" href="#verse" aria-label="Scroll to invitation details">Scroll</a>
+      </section>
+
+      <section class="section featured-verse" id="verse">
+        <div class="section-inner narrow reveal">
+          <p class="scripture">This is the day which the LORD hath made; we will rejoice and be glad in it.</p>
+          <p class="reference">Psalm 118:24</p>
+        </div>
+      </section>
+
+      <section class="section couple-portraits-section" aria-label="Bride and groom portraits">
+        <div class="section-inner portrait-inner reveal">
+          <figure class="couple-portrait groom">
+            <img id="portraitGroom" alt="">
+            <figcaption>Marcleno</figcaption>
+          </figure>
+          <div class="portrait-mark" aria-hidden="true">&amp;</div>
+          <figure class="couple-portrait bride">
+            <img id="portraitBride" alt="">
+            <figcaption>Reta</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section countdown-section" aria-labelledby="countdownTitle">
+        <div class="section-inner reveal">
+          <p class="eyebrow">Until the day</p>
+          <h2 id="countdownTitle">The Countdown</h2>
+          <div class="countdown" id="countdown" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section story-section" aria-labelledby="storyTitle">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Our Story</p>
+          <h2 id="storyTitle" class="reveal">A Love Written With Grace</h2>
+          <div class="timeline" id="storyTimeline"></div>
+        </div>
+      </section>
+
+      <section class="section scripture-slider" aria-label="Scripture verses">
+        <div class="section-inner narrow reveal">
+          <svg class="monogram-frame" viewBox="0 0 140 140" aria-hidden="true">
+            <circle cx="70" cy="70" r="62" />
+            <circle cx="70" cy="70" r="52" />
+            <text x="70" y="82" text-anchor="middle">M &amp; R</text>
+          </svg>
+          <div class="verse-slider" id="verseSlider"></div>
+          <div class="slider-dots" id="sliderDots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section event-section" aria-labelledby="eventsTitle">
+        <div class="section-inner">
+          <p class="eyebrow reveal">The Celebration</p>
+          <h2 id="eventsTitle" class="reveal">Event Details</h2>
+          <div class="event-grid" id="eventGrid"></div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" aria-labelledby="galleryTitle">
+        <div class="section-inner wide">
+          <p class="eyebrow reveal">Memories</p>
+          <h2 id="galleryTitle" class="reveal">Gallery</h2>
+          <div class="gallery" id="gallery"></div>
+        </div>
+      </section>
+
+      <section class="section rsvp-section" aria-labelledby="rsvpTitle">
+        <div class="section-inner narrow reveal">
+          <p class="eyebrow">RSVP</p>
+          <h2 id="rsvpTitle">Celebrate With Us</h2>
+          <p>We cannot wait to share this blessed day with you.</p>
+          <a class="primary-button" id="rsvpButton" href="#" target="_blank" rel="noreferrer">RSVP on WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-hidden="true" id="footer">
+      <svg class="monogram-frame small" viewBox="0 0 140 140" aria-hidden="true">
+        <circle cx="70" cy="70" r="62" />
+        <circle cx="70" cy="70" r="52" />
+        <text x="70" y="82" text-anchor="middle">M &amp; R</text>
+      </svg>
+      <p>We can't wait to celebrate with you</p>
+      <p id="footerDate">Date to be announced</p>
+      <small>And above all these things put on charity, which is the bond of perfectness.</small>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">×</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
+      <figure>
+        <img id="lightboxImage" alt="">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+      <p class="photo-counter" id="photoCounter"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
