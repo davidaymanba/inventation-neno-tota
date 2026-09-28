@@ -1,0 +1,10 @@
+{
+  "name": "marcleno-reta-wedding",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "hash-password": "node hash-password.js"
+  }
+}

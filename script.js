@@ -369,6 +369,38 @@ function setHtml(selector, value) {
   if (node) node.innerHTML = value;
 }
 
+function mergeDeep(target, source) {
+  Object.entries(source || {}).forEach(([key, value]) => {
+    if (Array.isArray(value)) {
+      target[key] = value;
+    } else if (value && typeof value === "object") {
+      if (!target[key] || typeof target[key] !== "object" || Array.isArray(target[key])) target[key] = {};
+      mergeDeep(target[key], value);
+    } else {
+      target[key] = value;
+    }
+  });
+  return target;
+}
+
+async function loadSiteData() {
+  try {
+    const response = await fetch("/api/site", { cache: "no-store" });
+    if (!response.ok) return;
+    const data = await response.json();
+    mergeDeep(CONFIG, data.config);
+    mergeDeep(I18N, data.i18n);
+  } catch (error) {
+    // Static hosting fallback: keep the built-in content.
+  }
+}
+
+function trackView() {
+  if (sessionStorage.getItem("wedding-view-counted")) return;
+  sessionStorage.setItem("wedding-view-counted", "1");
+  fetch("/api/views", { method: "POST", keepalive: true }).catch(() => {});
+}
+
 function applyLanguage(lang) {
   currentLang = lang;
   const text = tr();
@@ -543,7 +575,8 @@ function renderCountdown() {
 
 function renderStory() {
   $("#storyTimeline").innerHTML = CONFIG.story.map((chapterConfig, index) => {
-    const chapter = tr().story[index];
+    const translated = tr().story[index] || {};
+    const chapter = currentLang === "en" ? chapterConfig : { ...chapterConfig, ...translated };
     const photo = CONFIG.photos.find((item) => item.file === chapterConfig.photo);
     return `
       <article class="chapter reveal">
@@ -553,7 +586,7 @@ function renderStory() {
           <p>${chapter.text}</p>
         </div>
         <figure class="chapter-photo">
-          <img src="${encodePath(chapterConfig.photo)}" alt="${chapter.title}" loading="lazy" decoding="async" style="object-position:${photo?.position || "50% 35%"}">
+          <img src="${encodePath(chapterConfig.photo)}" alt="${chapter.title}" loading="lazy" decoding="async" style="object-position:${chapterConfig.position || photo?.position || "50% 35%"}">
         </figure>
       </article>
     `;
@@ -871,10 +904,16 @@ function initReveal() {
   items.forEach((item) => observer.observe(item));
 }
 
-initHero();
-applyLanguage("en");
-doorScreen.classList.add("language-selected");
-initMusic();
-initCursor();
-initContentProtection();
-initAutoKnock();
+async function boot() {
+  await loadSiteData();
+  trackView();
+  initHero();
+  applyLanguage("en");
+  doorScreen.classList.add("language-selected");
+  initMusic();
+  initCursor();
+  initContentProtection();
+  initAutoKnock();
+}
+
+boot();

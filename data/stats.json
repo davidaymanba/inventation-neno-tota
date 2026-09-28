@@ -1,0 +1,18 @@
+{
+  "totalViews": 2,
+  "todayViews": {
+    "2026-09-28": 2
+  },
+  "lastViews": [
+    {
+      "at": "2026-09-28T12:24:52.183Z",
+      "ip": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"
+    },
+    {
+      "at": "2026-09-28T12:21:11.677Z",
+      "ip": "127.0.0.1",
+      "userAgent": "curl/8.7.1"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding Admin</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="login-card" id="loginView">
+        <p class="kicker">Marcleno & Reta</p>
+        <h1>Admin Panel</h1>
+        <form id="loginForm">
+          <label>
+            Password
+            <input id="passwordInput" type="password" autocomplete="current-password" required>
+          </label>
+          <button type="submit">Login</button>
+          <p class="message" id="loginMessage"></p>
+        </form>
+      </section>
+
+      <section class="dashboard hidden" id="dashboardView">
+        <header class="admin-header">
+          <div>
+            <p class="kicker">Wedding Admin</p>
+            <h1>Site Control</h1>
+          </div>
+          <div class="header-actions">
+            <a href="/" target="_blank" rel="noreferrer">Open Site</a>
+            <button id="saveAll" type="button">Save All</button>
+            <button id="logoutBtn" type="button">Logout</button>
+          </div>
+        </header>
+
+        <section class="stats-grid" id="statsGrid"></section>
+
+        <nav class="tabs" aria-label="Admin sections">
+          <button class="active" data-tab="general" type="button">General</button>
+          <button data-tab="story" type="button">Story</button>
+          <button data-tab="gallery" type="button">Gallery</button>
+          <button data-tab="texts" type="button">Texts</button>
+        </nav>
+
+        <section class="panel active" id="tab-general">
+          <div class="panel-head">
+            <h2>General Content</h2>
+            <p>Main names, dates, music, maps, hero and portrait images.</p>
+          </div>
+          <div class="form-grid" id="generalForm"></div>
+        </section>
+
+        <section class="panel" id="tab-story">
+          <div class="panel-head">
+            <h2>Story CRUD</h2>
+            <button id="addStory" type="button">Add Story</button>
+          </div>
+          <div class="list-editor" id="storyEditor"></div>
+        </section>
+
+        <section class="panel" id="tab-gallery">
+          <div class="panel-head">
+            <h2>Gallery CRUD</h2>
+            <button id="addGallery" type="button">Add Photo</button>
+          </div>
+          <div class="list-editor" id="galleryEditor"></div>
+        </section>
+
+        <section class="panel" id="tab-texts">
+          <div class="panel-head">
+            <h2>Front Texts</h2>
+            <p>Section labels, buttons, event details, and closing copy.</p>
+          </div>
+          <div class="form-grid" id="textsForm"></div>
+        </section>
+
+        <p class="save-state" id="saveState"></p>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

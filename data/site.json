@@ -1,0 +1,772 @@
+{
+  "config": {
+    "groom": "Marcleno Mensa",
+    "bride": "Reta Atef",
+    "displayNames": "Marcleno & Reta",
+    "weddingDate": "2026-10-03",
+    "displayDate": "OCTOBER 3, 2026",
+    "ceremonyTime": "22:00",
+    "ceremonyDisplayTime": "10:00 PM",
+    "receptionTime": "TIME TO BE ANNOUNCED",
+    "timeZone": "Africa/Cairo",
+    "musicPath": "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
+    "heroPhoto": "صورة الخطوبة.jpeg",
+    "heroPortraits": {
+      "groom": {
+        "file": "WhatsApp Image 2026-09-27 at 15.58.26 (1).jpeg",
+        "position": "50% 30%",
+        "alt": "Portrait of Marcleno"
+      },
+      "bride": {
+        "file": "tota only.jpeg",
+        "position": "58% 42%",
+        "alt": "Portrait of Reta"
+      }
+    },
+    "mapLinks": {
+      "church": "https://maps.app.goo.gl/ZPXZPrNPKFqof9EY7?g_st=aw",
+      "reception": "https://maps.app.goo.gl/nb829kNoNFwYN7qz7?g_st=aw"
+    },
+    "story": [
+      {
+        "title": "The First Glimpse",
+        "date": "Our arranged beginning",
+        "photo": "دول اول صور شوفت فيها توتا علشان نبدا احلي جوازه صالونات.jpeg",
+        "text": "These were the first photos that opened the door to our story, a gentle beginning arranged with love, family, and grace."
+      },
+      {
+        "title": "The First Sitting",
+        "date": "3 February 2025",
+        "photo": "اول  قعدة  3 -2 - 2025.jpeg",
+        "text": "The first time we sat together, a simple meeting became the start of comfort, laughter, and something beautifully new."
+      },
+      {
+        "title": "First Photo Together",
+        "date": "Our first keepsake",
+        "photo": "اول صورة لينا .jpeg",
+        "text": "Our first photo together became more than a memory; it became the first page we would keep returning to with a smile."
+      },
+      {
+        "title": "Our First Outing",
+        "date": "21 February 2025",
+        "photo": "اول فسحة واول قعدة لينا ف دير العذراء دير درنكة اسيوط   21 - 2 - 2025.jpeg",
+        "text": "At the Virgin Mary Monastery in Dronka, Assiut, our first outing gave our hearts a quiet place to feel at home."
+      },
+      {
+        "title": "We Started To Agree",
+        "date": "Hearts getting closer",
+        "photo": "هنا بدانا نتفق.jpeg",
+        "text": "Little by little, the picture became clearer. We were no longer just meeting; we were choosing the same road."
+      },
+      {
+        "title": "Setting Our Engagement Date",
+        "date": "14 March 2025",
+        "photo": "حددنا ميعاد خطوبتنا 14 - 3 -  2025.jpeg",
+        "text": "This was the day our joy found a date, and the dream started to feel close enough to touch."
+      },
+      {
+        "title": "The World Knew",
+        "date": "21 March 2025",
+        "photo": "العالم كله عرف مين هي حبيبتي 21 - 3 - 2025.jpeg",
+        "text": "The whole world finally knew who held my heart, and our happiness became something we could share out loud."
+      },
+      {
+        "title": "I Gave Her My Ring",
+        "date": "Our promise",
+        "photo": "لبستها دبلتي .jpeg",
+        "text": "A small ring carried a big promise: to love, to stay, and to keep building this story together."
+      },
+      {
+        "title": "The Awaited Day",
+        "date": "3 April 2025",
+        "photo": "اليوم المنتظر 3 -4 -2025.jpeg",
+        "text": "The day we had waited for arrived with family, blessing, and a joy that made every detail unforgettable."
+      },
+      {
+        "title": "A Very Happy Eid",
+        "date": "A joyful feast",
+        "photo": "happy aeed .jpeg",
+        "text": "That Eid felt different, brighter, and happier, because it became another celebration we carried together."
+      },
+      {
+        "title": "Premarital Counseling Exam",
+        "date": "13 October 2025",
+        "photo": "امتحان المشاورة 13 -10 - 2025.jpeg",
+        "text": "Another step toward our wedding day, full of preparation, prayer, and the sweet seriousness of building a life."
+      },
+      {
+        "title": "My Birthday Had Meaning",
+        "date": "16 November 2025",
+        "photo": "اخيرا بقي لعيد ميلادي قيمة 16 -11 - 2025.jpeg",
+        "text": "A birthday became more precious because she was in it, turning an ordinary day into a memory worth keeping."
+      },
+      {
+        "title": "Merry Christmas",
+        "date": "Christmas joy",
+        "photo": "merry.jpeg",
+        "text": "Christmas came with warmth, blessing, and one more beautiful reason to be thankful for our story."
+      },
+      {
+        "title": "Her Beautiful Birthday",
+        "date": "21 January 2026",
+        "photo": "عيد ميلاد القمر حقي.jpeg",
+        "text": "The birthday of my moon, a day made for celebrating her smile, her heart, and the gift of having her near."
+      },
+      {
+        "title": "Our First Slow Dance",
+        "date": "A tender moment",
+        "photo": "اخيرا رقصنا سلو .jpeg",
+        "text": "Finally, we danced slowly, and for a moment everything around us felt quiet except the joy between us."
+      },
+      {
+        "title": "It Is Getting Close",
+        "date": "Almost there",
+        "photo": "انها تقترب .jpeg",
+        "text": "The day is getting closer, and every step now carries more excitement, more gratitude, and more love."
+      },
+      {
+        "title": "See You On Our Wedding Day",
+        "date": "3 October 2026",
+        "photo": "الصورة الختامية .jpeg",
+        "text": "After every chapter, every laugh, and every promise, we will be waiting for you to share our joy on 3 October 2026."
+      }
+    ],
+    "scriptureVerses": [
+      {
+        "text": "And now abideth faith, hope, charity, these three; but the greatest of these is charity.",
+        "ref": "1 Corinthians 13:13"
+      },
+      {
+        "text": "What therefore God hath joined together, let not man put asunder.",
+        "ref": "Mark 10:9"
+      },
+      {
+        "text": "A threefold cord is not quickly broken.",
+        "ref": "Ecclesiastes 4:12"
+      },
+      {
+        "text": "Many waters cannot quench love, neither can the floods drown it.",
+        "ref": "Song of Solomon 8:7"
+      },
+      {
+        "text": "And above all these things put on charity, which is the bond of perfectness.",
+        "ref": "Colossians 3:14"
+      },
+      {
+        "text": "Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
+        "ref": "Genesis 2:24"
+      }
+    ],
+    "photos": [
+      {
+        "file": "دول اول صور شوفت فيها توتا علشان نبدا احلي جوازه صالونات.jpeg",
+        "orientation": "portrait",
+        "position": "50% 35%",
+        "section": "story",
+        "alt": "Early portrait of Reta"
+      },
+      {
+        "file": "دول اول صور شوفت فيها توتا علشان نبدا احلي جوازه صالونات ١.jpeg",
+        "orientation": "portrait",
+        "position": "50% 36%",
+        "section": "story",
+        "alt": "Early portrait of Reta"
+      },
+      {
+        "file": "دول اول صور شوفت فيها توتا علشان نبدا احلي جوازه صالونات٢.jpeg",
+        "orientation": "portrait",
+        "position": "50% 36%",
+        "section": "story",
+        "alt": "Early portrait of Reta"
+      },
+      {
+        "file": "اول  قعدة  3 -2 - 2025.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "story",
+        "alt": "First sitting memory"
+      },
+      {
+        "file": "اول صورة لينا .jpeg",
+        "orientation": "portrait",
+        "position": "50% 32%",
+        "section": "story",
+        "alt": "First photo of Marcleno and Reta"
+      },
+      {
+        "file": "اول فسحة .jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "story",
+        "alt": "First outing memory"
+      },
+      {
+        "file": "صور خطوبتنا.jpeg",
+        "orientation": "portrait",
+        "position": "50% 32%",
+        "section": "gallery",
+        "alt": "Marcleno and Reta engagement portrait"
+      },
+      {
+        "file": "صور  خطوبة .jpeg",
+        "orientation": "portrait",
+        "position": "50% 32%",
+        "section": "gallery",
+        "alt": "Engagement portrait of Marcleno and Reta"
+      },
+      {
+        "file": "صورة الخطوبة.jpeg",
+        "orientation": "portrait",
+        "position": "50% 50%",
+        "section": "hero",
+        "alt": "Full-length engagement portrait of Marcleno and Reta"
+      },
+      {
+        "file": "الصورة الختامية .jpeg",
+        "orientation": "portrait",
+        "position": "50% 28%",
+        "section": "story",
+        "alt": "Marcleno and Reta showing their rings"
+      },
+      {
+        "file": "tota only.jpeg",
+        "orientation": "portrait",
+        "position": "50% 30%",
+        "section": "gallery",
+        "alt": "Portrait of Reta"
+      },
+      {
+        "file": " 2026-09-26 at 00.25.41.jpeg",
+        "orientation": "landscape",
+        "position": "47% 38%",
+        "section": "gallery",
+        "alt": "Family memory with Marcleno and Reta"
+      },
+      {
+        "file": " 2026-09-26 at 00.38.17.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": " Image 2026-09-26 at 00.25.54.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "2026-09-26 at 00.25.50.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "Wha 2026-09-26 at 00.39.08.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsA 2026-09-26 at 00.28.14.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp  2026-09-26 at 00.25.53.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26  00.25.48.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.25.40.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.25.41.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.25.43.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.25.46.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.25.47.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.39.55.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.43.23.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.45.22.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.46.49.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.48.23.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.49.28.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.50.27.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.51.11.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.52.49.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.53.46.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.55.13.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.57.18.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-26 at 00.58.26.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsApp Image 2026-09-6 at 00.25.40.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      },
+      {
+        "file": "WhatsAs 2026-09-26 at 00.40.37.jpeg",
+        "orientation": "portrait",
+        "position": "50% 34%",
+        "section": "gallery",
+        "alt": "Wedding memory"
+      }
+    ]
+  },
+  "i18n": {
+    "en": {
+      "dir": "ltr",
+      "title": "Marcleno & Reta | Wedding Invitation",
+      "description": "Together with their families, Marcleno Mensa and Reta Atef invite you to celebrate their wedding day in Assiut, Egypt.",
+      "languageKicker": "Wedding Invitation",
+      "languageTitle": "Choose Your Language",
+      "doorInstruction": "Knock three times to open",
+      "heroEyebrow": "Together with their families",
+      "heroNames": "Marcleno <span>&amp;</span> Reta",
+      "displayDate": "OCTOBER 3, 2026",
+      "scroll": "Scroll",
+      "featuredVerse": "This is the day which the LORD hath made; we will rejoice and be glad in it.",
+      "featuredReference": "Psalm 118:24",
+      "groomName": "Marcleno",
+      "brideName": "Reta",
+      "countdownEyebrow": "Until the day",
+      "countdownTitle": "The Countdown",
+      "countdownUnits": [
+        "Days",
+        "Hours",
+        "Minutes",
+        "Seconds"
+      ],
+      "storyEyebrow": "Our Story",
+      "storyTitle": "A Love Written With Grace",
+      "scriptureLabel": "Scripture verses",
+      "eventsEyebrow": "The Celebration",
+      "eventsTitle": "Event Details",
+      "galleryEyebrow": "Memories",
+      "galleryTitle": "Gallery",
+      "closingEyebrow": "With Love",
+      "closingTitle": "We'll Be Waiting For You",
+      "closingCopy": "Your presence will make our joy complete.",
+      "lightboxClose": "Close photo viewer",
+      "lightboxPrev": "Previous photo",
+      "lightboxNext": "Next photo",
+      "openPhoto": "Open photo",
+      "photoMemory": "Wedding memory",
+      "story": [
+        {
+          "title": "The First Glimpse",
+          "date": "Our arranged beginning",
+          "text": "These were the first photos that opened the door to our story, a gentle beginning arranged with love, family, and grace."
+        },
+        {
+          "title": "The First Sitting",
+          "date": "3 February 2025",
+          "text": "The first time we sat together, a simple meeting became the start of comfort, laughter, and something beautifully new."
+        },
+        {
+          "title": "First Photo Together",
+          "date": "Our first keepsake",
+          "text": "Our first photo together became more than a memory; it became the first page we would keep returning to with a smile."
+        },
+        {
+          "title": "Our First Outing",
+          "date": "21 February 2025",
+          "text": "At the Virgin Mary Monastery in Dronka, Assiut, our first outing gave our hearts a quiet place to feel at home."
+        },
+        {
+          "title": "We Started To Agree",
+          "date": "Hearts getting closer",
+          "text": "Little by little, the picture became clearer. We were no longer just meeting; we were choosing the same road."
+        },
+        {
+          "title": "Setting Our Engagement Date",
+          "date": "14 March 2025",
+          "text": "This was the day our joy found a date, and the dream started to feel close enough to touch."
+        },
+        {
+          "title": "The World Knew",
+          "date": "21 March 2025",
+          "text": "The whole world finally knew who held my heart, and our happiness became something we could share out loud."
+        },
+        {
+          "title": "I Gave Her My Ring",
+          "date": "Our promise",
+          "text": "A small ring carried a big promise: to love, to stay, and to keep building this story together."
+        },
+        {
+          "title": "The Awaited Day",
+          "date": "3 April 2025",
+          "text": "The day we had waited for arrived with family, blessing, and a joy that made every detail unforgettable."
+        },
+        {
+          "title": "A Very Happy Eid",
+          "date": "A joyful feast",
+          "text": "That Eid felt different, brighter, and happier, because it became another celebration we carried together."
+        },
+        {
+          "title": "Premarital Counseling Exam",
+          "date": "13 October 2025",
+          "text": "Another step toward our wedding day, full of preparation, prayer, and the sweet seriousness of building a life."
+        },
+        {
+          "title": "My Birthday Had Meaning",
+          "date": "16 November 2025",
+          "text": "A birthday became more precious because she was in it, turning an ordinary day into a memory worth keeping."
+        },
+        {
+          "title": "Merry Christmas",
+          "date": "Christmas joy",
+          "text": "Christmas came with warmth, blessing, and one more beautiful reason to be thankful for our story."
+        },
+        {
+          "title": "Her Beautiful Birthday",
+          "date": "21 January 2026",
+          "text": "The birthday of my moon, a day made for celebrating her smile, her heart, and the gift of having her near."
+        },
+        {
+          "title": "Our First Slow Dance",
+          "date": "A tender moment",
+          "text": "Finally, we danced slowly, and for a moment everything around us felt quiet except the joy between us."
+        },
+        {
+          "title": "It Is Getting Close",
+          "date": "Almost there",
+          "text": "The day is getting closer, and every step now carries more excitement, more gratitude, and more love."
+        },
+        {
+          "title": "See You On Our Wedding Day",
+          "date": "3 October 2026",
+          "text": "After every chapter, every laugh, and every promise, we will be waiting for you to share our joy on 3 October 2026."
+        }
+      ],
+      "scriptureVerses": [
+        {
+          "text": "And now abideth faith, hope, charity, these three; but the greatest of these is charity.",
+          "ref": "1 Corinthians 13:13"
+        },
+        {
+          "text": "What therefore God hath joined together, let not man put asunder.",
+          "ref": "Mark 10:9"
+        },
+        {
+          "text": "A threefold cord is not quickly broken.",
+          "ref": "Ecclesiastes 4:12"
+        },
+        {
+          "text": "Many waters cannot quench love, neither can the floods drown it.",
+          "ref": "Song of Solomon 8:7"
+        },
+        {
+          "text": "And above all these things put on charity, which is the bond of perfectness.",
+          "ref": "Colossians 3:14"
+        },
+        {
+          "text": "Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
+          "ref": "Genesis 2:24"
+        }
+      ],
+      "events": {
+        "ceremonyLabel": "Ceremony",
+        "receptionLabel": "Reception",
+        "ceremonyTitle": "The Holy Matrimony",
+        "receptionTitle": "The Reception",
+        "churchLocation": "Church of the Great Saint Mar-George in Assiut",
+        "receptionLocation": "Royal Plaza Wedding Hall - Royal Hotel, Assiut",
+        "ceremonyTime": "10:00 PM",
+        "receptionTime": "TIME TO BE ANNOUNCED",
+        "ceremonyDescription": "The wedding ceremony of Marcleno Mensa and Reta Atef.",
+        "receptionDescription": "The wedding reception of Marcleno Mensa and Reta Atef.",
+        "map": "View on Map",
+        "ics": "Add .ics",
+        "google": "Google Calendar"
+      }
+    },
+    "ar": {
+      "dir": "rtl",
+      "title": "دعوة زفاف ماركلينو وريتا",
+      "description": "بكل فرح، يدعوكم ماركلينو منسي وريتا عاطف لمشاركتهم يوم زفافهم في أسيوط.",
+      "languageKicker": "دعوة زفاف",
+      "languageTitle": "اختار اللغة",
+      "doorInstruction": "اخبط ٣ دقات لفتح الدعوة",
+      "heroEyebrow": "مع عائلتيهما",
+      "heroNames": "ماركلينو <span>&amp;</span> ريتا",
+      "displayDate": "٣ أكتوبر ٢٠٢٦",
+      "scroll": "انزل",
+      "featuredVerse": "هذا هو اليوم الذي صنعه الرب، نبتهج ونفرح فيه.",
+      "featuredReference": "مزمور ١١٨: ٢٤",
+      "groomName": "ماركلينو",
+      "brideName": "ريتا",
+      "countdownEyebrow": "باقي على اليوم",
+      "countdownTitle": "العد التنازلي",
+      "countdownUnits": [
+        "يوم",
+        "ساعة",
+        "دقيقة",
+        "ثانية"
+      ],
+      "storyEyebrow": "حكايتنا",
+      "storyTitle": "محبة مكتوبة بنعمة",
+      "scriptureLabel": "آيات كتابية",
+      "eventsEyebrow": "الاحتفال",
+      "eventsTitle": "تفاصيل اليوم",
+      "galleryEyebrow": "ذكريات",
+      "galleryTitle": "المعرض",
+      "closingEyebrow": "بكل محبة",
+      "closingTitle": "هنستناكم",
+      "closingCopy": "وجودكم معانا يكمل فرحتنا.",
+      "lightboxClose": "إغلاق عارض الصور",
+      "lightboxPrev": "الصورة السابقة",
+      "lightboxNext": "الصورة التالية",
+      "openPhoto": "افتح الصورة",
+      "photoMemory": "ذكرى من يومنا",
+      "story": [
+        {
+          "title": "أول لمحة",
+          "date": "بداية صالونات جميلة",
+          "text": "دي كانت أول صور فتحت باب الحكاية، بداية هادية اتعملت بمحبة وبركة وفرحة من القلب."
+        },
+        {
+          "title": "أول قعدة",
+          "date": "٣ فبراير ٢٠٢٥",
+          "text": "أول قعدة جمعتنا كانت بسيطة، بس منها بدأت الراحة والضحك وبداية حاجة حلوة جدًا."
+        },
+        {
+          "title": "أول صورة لينا",
+          "date": "أول ذكرى",
+          "text": "أول صورة لينا بقت أكتر من صورة، بقت أول صفحة بنرجعلها بابتسامة في حكايتنا."
+        },
+        {
+          "title": "أول فسحة لينا",
+          "date": "٢١ فبراير ٢٠٢٥",
+          "text": "في دير العذراء بدرنكة أسيوط، كانت أول فسحة وأول قعدة حسينا فيها إن قلوبنا مرتاحة."
+        },
+        {
+          "title": "هنا بدأنا نتفق",
+          "date": "قلوب بتقرب",
+          "text": "واحدة واحدة الصورة وضحت، ومبقيناش بنتقابل وبس، بقينا بنختار نفس الطريق."
+        },
+        {
+          "title": "حددنا ميعاد خطوبتنا",
+          "date": "١٤ مارس ٢٠٢٥",
+          "text": "في اليوم ده فرحتنا بقى ليها ميعاد، والحلم بدأ يقرب ويبقى حقيقي قدام عنينا."
+        },
+        {
+          "title": "العالم كله عرف",
+          "date": "٢١ مارس ٢٠٢٥",
+          "text": "العالم كله عرف مين هي حبيبتي، وفرحتنا بقت حاجة نعلنها ونفرح بيها قدام الكل."
+        },
+        {
+          "title": "لبستها دبلتي",
+          "date": "وعدنا",
+          "text": "دبلة صغيرة شايلة وعد كبير: نحب، ونكمل، ونبني حكايتنا سوا."
+        },
+        {
+          "title": "اليوم المنتظر",
+          "date": "٣ أبريل ٢٠٢٥",
+          "text": "اليوم اللي استنيناه جه بفرحة الأهل والبركة، وكل تفاصيله فضلت محفورة في القلب."
+        },
+        {
+          "title": "هابي عيد جدًا",
+          "date": "فرحة العيد",
+          "text": "العيد ده كان مختلف وأحلى، لأنه بقى ذكرى جديدة وفرحة بنعيشها مع بعض."
+        },
+        {
+          "title": "امتحان المشاورة",
+          "date": "١٣ أكتوبر ٢٠٢٥",
+          "text": "خطوة جديدة ناحية يوم الإكليل، فيها استعداد وصلاة وفرحة الطريق اللي بنبنيه سوا."
+        },
+        {
+          "title": "عيد ميلادي بقى له قيمة",
+          "date": "١٦ نوفمبر ٢٠٢٥",
+          "text": "عيد ميلادي بقى أغلى لأنها كانت فيه، وحولت اليوم العادي لذكرى تستاهل تتحفظ."
+        },
+        {
+          "title": "ميري كريسماس",
+          "date": "فرحة الميلاد",
+          "text": "الكريسماس جه بدفء وبركة وسبب جديد نشكر ربنا عليه في حكايتنا."
+        },
+        {
+          "title": "عيد ميلاد القمر حقي",
+          "date": "٢١ يناير ٢٠٢٦",
+          "text": "عيد ميلاد قمري، يوم نفرح فيه بابتسامتها وقلبها ووجودها اللي منور حياتي."
+        },
+        {
+          "title": "أخيرًا رقصنا سلو",
+          "date": "لحظة هادية",
+          "text": "أخيرًا رقصنا سلو، وللحظة حسينا إن كل حاجة حواليّنا هديت إلا الفرحة اللي بينا."
+        },
+        {
+          "title": "إنها تقترب",
+          "date": "قربت جدًا",
+          "text": "اليوم بيقرب، وكل خطوة بقت شايلة حماس أكتر وشكر أكتر ومحبة أكتر."
+        },
+        {
+          "title": "نتقابل يوم فرحنا",
+          "date": "٣ أكتوبر ٢٠٢٦",
+          "text": "بعد كل فصل وكل ضحكة وكل وعد، هنستناكم تشاركونا فرحتنا يوم ٣ أكتوبر ٢٠٢٦."
+        }
+      ],
+      "scriptureVerses": [
+        {
+          "text": "أما الآن فيثبت: الإيمان والرجاء والمحبة، هذه الثلاثة؛ ولكن أعظمهن المحبة.",
+          "ref": "١ كورنثوس ١٣: ١٣"
+        },
+        {
+          "text": "فالذي جمعه الله لا يفرقه إنسان.",
+          "ref": "مرقس ١٠: ٩"
+        },
+        {
+          "text": "والخيط المثلوث لا ينقطع سريعًا.",
+          "ref": "جامعة ٤: ١٢"
+        },
+        {
+          "text": "مياه كثيرة لا تستطيع أن تطفئ المحبة، والسيول لا تغمرها.",
+          "ref": "نشيد الأنشاد ٨: ٧"
+        },
+        {
+          "text": "وعلى جميع هذه البسوا المحبة التي هي رباط الكمال.",
+          "ref": "كولوسي ٣: ١٤"
+        },
+        {
+          "text": "لذلك يترك الرجل أباه وأمه ويلتصق بامرأته ويكونان جسدًا واحدًا.",
+          "ref": "تكوين ٢: ٢٤"
+        }
+      ],
+      "events": {
+        "ceremonyLabel": "الإكليل",
+        "receptionLabel": "الاحتفال",
+        "ceremonyTitle": "سر الزيجة المقدس",
+        "receptionTitle": "حفل الاستقبال",
+        "churchLocation": "كنيسة الشهيد العظيم مارجرجس بأسيوط",
+        "receptionLocation": "قاعة رويال بلازا - فندق رويال، أسيوط",
+        "ceremonyTime": "١٠:٠٠ مساءً",
+        "receptionTime": "سيتم الإعلان عن الموعد",
+        "ceremonyDescription": "إكليل ماركلينو منسي وريتا عاطف.",
+        "receptionDescription": "حفل استقبال زفاف ماركلينو منسي وريتا عاطف.",
+        "map": "افتح الخريطة",
+        "ics": "أضف للتقويم",
+        "google": "تقويم Google"
+      }
+    }
+  }
+}
