@@ -8,7 +8,7 @@ const CONFIG = {
   ceremonyDisplayTime: "10:00 PM",
   receptionTime: "TIME TO BE ANNOUNCED",
   timeZone: "Africa/Cairo",
-  musicPath: "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1",
+  musicPath: "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
   heroPhoto: "صورة الخطوبة.jpeg",
   heroPortraits: {
     groom: {
@@ -28,40 +28,106 @@ const CONFIG = {
   },
   story: [
     {
-      title: "How We Met",
-      date: "The first hello",
+      title: "The First Glimpse",
+      date: "Our arranged beginning",
       photo: "دول اول صور شوفت فيها توتا علشان نبدا احلي جوازه صالونات.jpeg",
-      text: "A quiet beginning, held by family, prayer, and the kind of joy that grows gently before anyone can name it."
+      text: "These were the first photos that opened the door to our story, a gentle beginning arranged with love, family, and grace."
     },
     {
       title: "The First Sitting",
       date: "3 February 2025",
       photo: "اول  قعدة  3 -2 - 2025.jpeg",
-      text: "A simple conversation became a remembered day, where ease, laughter, and grace made room for something beautiful."
+      text: "The first time we sat together, a simple meeting became the start of comfort, laughter, and something beautifully new."
     },
     {
       title: "First Photo Together",
-      date: "A favorite beginning",
+      date: "Our first keepsake",
       photo: "اول صورة لينا .jpeg",
-      text: "The first picture together became more than a keepsake; it became the opening page of a story they would keep choosing."
+      text: "Our first photo together became more than a memory; it became the first page we would keep returning to with a smile."
     },
     {
-      title: "Growing Together",
-      date: "Every shared walk",
-      photo: "اول فسحة .jpeg",
-      text: "Through ordinary outings and small celebrations, love became steadier, warmer, and easier to recognize."
+      title: "Our First Outing",
+      date: "21 February 2025",
+      photo: "اول فسحة واول قعدة لينا ف دير العذراء دير درنكة اسيوط   21 - 2 - 2025.jpeg",
+      text: "At the Virgin Mary Monastery in Dronka, Assiut, our first outing gave our hearts a quiet place to feel at home."
     },
     {
-      title: "The Proposal",
-      date: "A promised yes",
-      photo: "صورة الخطوبة.jpeg",
-      text: "Surrounded by light, blessing, and family joy, the promise became clear: together, with God before them."
+      title: "We Started To Agree",
+      date: "Hearts getting closer",
+      photo: "هنا بدانا نتفق.jpeg",
+      text: "Little by little, the picture became clearer. We were no longer just meeting; we were choosing the same road."
     },
     {
-      title: "Forever Begins",
-      date: "With thanksgiving",
+      title: "Setting Our Engagement Date",
+      date: "14 March 2025",
+      photo: "حددنا ميعاد خطوبتنا 14 - 3 -  2025.jpeg",
+      text: "This was the day our joy found a date, and the dream started to feel close enough to touch."
+    },
+    {
+      title: "The World Knew",
+      date: "21 March 2025",
+      photo: "العالم كله عرف مين هي حبيبتي 21 - 3 - 2025.jpeg",
+      text: "The whole world finally knew who held my heart, and our happiness became something we could share out loud."
+    },
+    {
+      title: "I Gave Her My Ring",
+      date: "Our promise",
+      photo: "لبستها دبلتي .jpeg",
+      text: "A small ring carried a big promise: to love, to stay, and to keep building this story together."
+    },
+    {
+      title: "The Awaited Day",
+      date: "3 April 2025",
+      photo: "اليوم المنتظر 3 -4 -2025.jpeg",
+      text: "The day we had waited for arrived with family, blessing, and a joy that made every detail unforgettable."
+    },
+    {
+      title: "A Very Happy Eid",
+      date: "A joyful feast",
+      photo: "happy aeed .jpeg",
+      text: "That Eid felt different, brighter, and happier, because it became another celebration we carried together."
+    },
+    {
+      title: "Premarital Counseling Exam",
+      date: "13 October 2025",
+      photo: "امتحان المشاورة 13 -10 - 2025.jpeg",
+      text: "Another step toward our wedding day, full of preparation, prayer, and the sweet seriousness of building a life."
+    },
+    {
+      title: "My Birthday Had Meaning",
+      date: "16 November 2025",
+      photo: "اخيرا بقي لعيد ميلادي قيمة 16 -11 - 2025.jpeg",
+      text: "A birthday became more precious because she was in it, turning an ordinary day into a memory worth keeping."
+    },
+    {
+      title: "Merry Christmas",
+      date: "Christmas joy",
+      photo: "merry.jpeg",
+      text: "Christmas came with warmth, blessing, and one more beautiful reason to be thankful for our story."
+    },
+    {
+      title: "Her Beautiful Birthday",
+      date: "21 January 2026",
+      photo: "عيد ميلاد القمر حقي.jpeg",
+      text: "The birthday of my moon, a day made for celebrating her smile, her heart, and the gift of having her near."
+    },
+    {
+      title: "Our First Slow Dance",
+      date: "A tender moment",
+      photo: "اخيرا رقصنا سلو .jpeg",
+      text: "Finally, we danced slowly, and for a moment everything around us felt quiet except the joy between us."
+    },
+    {
+      title: "It Is Getting Close",
+      date: "Almost there",
+      photo: "انها تقترب .jpeg",
+      text: "The day is getting closer, and every step now carries more excitement, more gratitude, and more love."
+    },
+    {
+      title: "See You On Our Wedding Day",
+      date: "3 October 2026",
       photo: "الصورة الختامية .jpeg",
-      text: "Now they step toward the altar, grateful for every chapter behind them and every chapter still to come."
+      text: "After every chapter, every laugh, and every promise, we will be waiting for you to share our joy on 3 October 2026."
     }
   ],
   scriptureVerses: [
@@ -150,12 +216,23 @@ const I18N = {
     openPhoto: "Open photo",
     photoMemory: "Wedding memory",
     story: [
-      { title: "How We Met", date: "The first hello", text: "A quiet beginning, held by family, prayer, and the kind of joy that grows gently before anyone can name it." },
-      { title: "The First Sitting", date: "3 February 2025", text: "A simple conversation became a remembered day, where ease, laughter, and grace made room for something beautiful." },
-      { title: "First Photo Together", date: "A favorite beginning", text: "The first picture together became more than a keepsake; it became the opening page of a story they would keep choosing." },
-      { title: "Growing Together", date: "Every shared walk", text: "Through ordinary outings and small celebrations, love became steadier, warmer, and easier to recognize." },
-      { title: "The Proposal", date: "A promised yes", text: "Surrounded by light, blessing, and family joy, the promise became clear: together, with God before them." },
-      { title: "Forever Begins", date: "With thanksgiving", text: "Now they step toward the altar, grateful for every chapter behind them and every chapter still to come." }
+      { title: "The First Glimpse", date: "Our arranged beginning", text: "These were the first photos that opened the door to our story, a gentle beginning arranged with love, family, and grace." },
+      { title: "The First Sitting", date: "3 February 2025", text: "The first time we sat together, a simple meeting became the start of comfort, laughter, and something beautifully new." },
+      { title: "First Photo Together", date: "Our first keepsake", text: "Our first photo together became more than a memory; it became the first page we would keep returning to with a smile." },
+      { title: "Our First Outing", date: "21 February 2025", text: "At the Virgin Mary Monastery in Dronka, Assiut, our first outing gave our hearts a quiet place to feel at home." },
+      { title: "We Started To Agree", date: "Hearts getting closer", text: "Little by little, the picture became clearer. We were no longer just meeting; we were choosing the same road." },
+      { title: "Setting Our Engagement Date", date: "14 March 2025", text: "This was the day our joy found a date, and the dream started to feel close enough to touch." },
+      { title: "The World Knew", date: "21 March 2025", text: "The whole world finally knew who held my heart, and our happiness became something we could share out loud." },
+      { title: "I Gave Her My Ring", date: "Our promise", text: "A small ring carried a big promise: to love, to stay, and to keep building this story together." },
+      { title: "The Awaited Day", date: "3 April 2025", text: "The day we had waited for arrived with family, blessing, and a joy that made every detail unforgettable." },
+      { title: "A Very Happy Eid", date: "A joyful feast", text: "That Eid felt different, brighter, and happier, because it became another celebration we carried together." },
+      { title: "Premarital Counseling Exam", date: "13 October 2025", text: "Another step toward our wedding day, full of preparation, prayer, and the sweet seriousness of building a life." },
+      { title: "My Birthday Had Meaning", date: "16 November 2025", text: "A birthday became more precious because she was in it, turning an ordinary day into a memory worth keeping." },
+      { title: "Merry Christmas", date: "Christmas joy", text: "Christmas came with warmth, blessing, and one more beautiful reason to be thankful for our story." },
+      { title: "Her Beautiful Birthday", date: "21 January 2026", text: "The birthday of my moon, a day made for celebrating her smile, her heart, and the gift of having her near." },
+      { title: "Our First Slow Dance", date: "A tender moment", text: "Finally, we danced slowly, and for a moment everything around us felt quiet except the joy between us." },
+      { title: "It Is Getting Close", date: "Almost there", text: "The day is getting closer, and every step now carries more excitement, more gratitude, and more love." },
+      { title: "See You On Our Wedding Day", date: "3 October 2026", text: "After every chapter, every laugh, and every promise, we will be waiting for you to share our joy on 3 October 2026." }
     ],
     scriptureVerses: [
       { text: "And now abideth faith, hope, charity, these three; but the greatest of these is charity.", ref: "1 Corinthians 13:13" },
@@ -215,12 +292,23 @@ const I18N = {
     openPhoto: "افتح الصورة",
     photoMemory: "ذكرى من يومنا",
     story: [
-      { title: "إزاي اتقابلنا", date: "أول سلام", text: "بداية هادية مليانة بركة، وسط العيلة والصلاة وفرحة كانت بتكبر بهدوء." },
-      { title: "أول قعدة", date: "٣ فبراير ٢٠٢٥", text: "قعدة بسيطة بقت يوم مميز، فيها راحة وضحك ونعمة فتحت باب حكاية جميلة." },
-      { title: "أول صورة لينا", date: "بداية غالية", text: "أول صورة جمعتنا فضلت ذكرى حلوة وبداية صفحة جديدة بنختار نكملها مع بعض." },
-      { title: "كبرنا مع بعض", date: "كل خروجة وكل ضحكة", text: "في التفاصيل الصغيرة واللحظات العادية، المحبة بقت أوضح وأثبت وأدفى." },
-      { title: "الخطوبة", date: "وعد وفرحة", text: "وسط النور وفرحة الأهل وبركة ربنا، الوعد بقى واضح: نكمل الطريق مع بعض." },
-      { title: "بداية للأبد", date: "بشكر وفرح", text: "دلوقتي بنقرب من يوم الإكليل بقلوب مليانة شكر لكل خطوة فاتت ولكل اللي جاي." }
+      { title: "أول لمحة", date: "بداية صالونات جميلة", text: "دي كانت أول صور فتحت باب الحكاية، بداية هادية اتعملت بمحبة وبركة وفرحة من القلب." },
+      { title: "أول قعدة", date: "٣ فبراير ٢٠٢٥", text: "أول قعدة جمعتنا كانت بسيطة، بس منها بدأت الراحة والضحك وبداية حاجة حلوة جدًا." },
+      { title: "أول صورة لينا", date: "أول ذكرى", text: "أول صورة لينا بقت أكتر من صورة، بقت أول صفحة بنرجعلها بابتسامة في حكايتنا." },
+      { title: "أول فسحة لينا", date: "٢١ فبراير ٢٠٢٥", text: "في دير العذراء بدرنكة أسيوط، كانت أول فسحة وأول قعدة حسينا فيها إن قلوبنا مرتاحة." },
+      { title: "هنا بدأنا نتفق", date: "قلوب بتقرب", text: "واحدة واحدة الصورة وضحت، ومبقيناش بنتقابل وبس، بقينا بنختار نفس الطريق." },
+      { title: "حددنا ميعاد خطوبتنا", date: "١٤ مارس ٢٠٢٥", text: "في اليوم ده فرحتنا بقى ليها ميعاد، والحلم بدأ يقرب ويبقى حقيقي قدام عنينا." },
+      { title: "العالم كله عرف", date: "٢١ مارس ٢٠٢٥", text: "العالم كله عرف مين هي حبيبتي، وفرحتنا بقت حاجة نعلنها ونفرح بيها قدام الكل." },
+      { title: "لبستها دبلتي", date: "وعدنا", text: "دبلة صغيرة شايلة وعد كبير: نحب، ونكمل، ونبني حكايتنا سوا." },
+      { title: "اليوم المنتظر", date: "٣ أبريل ٢٠٢٥", text: "اليوم اللي استنيناه جه بفرحة الأهل والبركة، وكل تفاصيله فضلت محفورة في القلب." },
+      { title: "هابي عيد جدًا", date: "فرحة العيد", text: "العيد ده كان مختلف وأحلى، لأنه بقى ذكرى جديدة وفرحة بنعيشها مع بعض." },
+      { title: "امتحان المشاورة", date: "١٣ أكتوبر ٢٠٢٥", text: "خطوة جديدة ناحية يوم الإكليل، فيها استعداد وصلاة وفرحة الطريق اللي بنبنيه سوا." },
+      { title: "عيد ميلادي بقى له قيمة", date: "١٦ نوفمبر ٢٠٢٥", text: "عيد ميلادي بقى أغلى لأنها كانت فيه، وحولت اليوم العادي لذكرى تستاهل تتحفظ." },
+      { title: "ميري كريسماس", date: "فرحة الميلاد", text: "الكريسماس جه بدفء وبركة وسبب جديد نشكر ربنا عليه في حكايتنا." },
+      { title: "عيد ميلاد القمر حقي", date: "٢١ يناير ٢٠٢٦", text: "عيد ميلاد قمري، يوم نفرح فيه بابتسامتها وقلبها ووجودها اللي منور حياتي." },
+      { title: "أخيرًا رقصنا سلو", date: "لحظة هادية", text: "أخيرًا رقصنا سلو، وللحظة حسينا إن كل حاجة حواليّنا هديت إلا الفرحة اللي بينا." },
+      { title: "إنها تقترب", date: "قربت جدًا", text: "اليوم بيقرب، وكل خطوة بقت شايلة حماس أكتر وشكر أكتر ومحبة أكتر." },
+      { title: "نتقابل يوم فرحنا", date: "٣ أكتوبر ٢٠٢٦", text: "بعد كل فصل وكل ضحكة وكل وعد، هنستناكم تشاركونا فرحتنا يوم ٣ أكتوبر ٢٠٢٦." }
     ],
     scriptureVerses: [
       { text: "أما الآن فيثبت: الإيمان والرجاء والمحبة، هذه الثلاثة؛ ولكن أعظمهن المحبة.", ref: "١ كورنثوس ١٣: ١٣" },
@@ -736,6 +824,36 @@ function initCursor() {
   animate();
 }
 
+function initContentProtection() {
+  document.querySelectorAll("img, video").forEach((media) => {
+    media.setAttribute("draggable", "false");
+    media.addEventListener("dragstart", (event) => event.preventDefault());
+  });
+
+  document.addEventListener("contextmenu", (event) => {
+    if (event.target.closest("img, video, .gallery-item, .chapter-photo, .hero, .closing-section, .door-screen, .lightbox")) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("dragstart", (event) => {
+    if (event.target.closest("img, video, .gallery-item, .chapter-photo, .hero, .closing-section")) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const blockedShortcut = (event.ctrlKey || event.metaKey) && ["s", "u", "p", "c", "x"].includes(key);
+    const devtoolsShortcut = event.key === "F12" || ((event.ctrlKey || event.metaKey) && event.shiftKey && ["i", "j", "c"].includes(key));
+
+    if (blockedShortcut || devtoolsShortcut || key === "printscreen") {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+}
+
 function initReveal() {
   const items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
@@ -758,4 +876,5 @@ applyLanguage("en");
 doorScreen.classList.add("language-selected");
 initMusic();
 initCursor();
+initContentProtection();
 initAutoKnock();

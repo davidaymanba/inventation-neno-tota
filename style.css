@@ -36,6 +36,8 @@ body {
   font-family: "Jost", system-ui, sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 body[data-lang="ar"] {
@@ -49,6 +51,16 @@ body.locked {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+img,
+video {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
 }
 
 .custom-cursor {
@@ -840,6 +852,8 @@ h2 {
 }
 
 .event-card {
+  display: flex;
+  flex-direction: column;
   padding: clamp(1.4rem, 4vw, 2.4rem);
   border: 1px solid rgba(200, 169, 106, .45);
   background: rgba(255, 253, 248, .58);
@@ -867,10 +881,11 @@ h2 {
 }
 
 .event-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: .65rem;
-  margin-top: 1.4rem;
+  margin-top: auto;
+  padding-top: 1.4rem;
 }
 
 .text-button,
@@ -891,8 +906,10 @@ h2 {
 .primary-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 44px;
   padding: .8rem 1rem;
+  text-align: center;
 }
 
 .primary-button {
@@ -1187,9 +1204,25 @@ h2 {
     padding-top: min(11vw, 48px);
   }
 
-  .countdown,
-  .event-grid {
+  .countdown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .event-card {
+    padding: 1.45rem;
+  }
+
+  .event-card h3 {
+    font-size: clamp(2.25rem, 12vw, 3.2rem);
+  }
+
+  .event-actions {
+    grid-template-columns: 1fr;
   }
 
   .closing-section {
