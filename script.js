@@ -8,8 +8,9 @@ const CONFIG = {
   ceremonyDisplayTime: "10:00 PM",
   receptionTime: "TIME TO BE ANNOUNCED",
   timeZone: "Africa/Cairo",
-  musicPath: "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
+  musicPath: "اغنية انتي القمر - موقع مطبعه.mp3?v=1",
   musicPlaylist: [
+    "اغنية انتي القمر - موقع مطبعه.mp3?v=1",
     "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
     "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1",
     "Albumaty.Com_ramy_sbri_ahsasy_maak.mp3?v=1",
@@ -781,10 +782,16 @@ function pickMusicTrack() {
   if (!tracks.length) return "";
   if (tracks.length === 1) return tracks[0];
 
-  const lastTrack = sessionStorage.getItem("last-music-track");
+  if (!localStorage.getItem("music-intro-played") && tracks.includes(CONFIG.musicPath)) {
+    localStorage.setItem("music-intro-played", "1");
+    localStorage.setItem("last-music-track", CONFIG.musicPath);
+    return CONFIG.musicPath;
+  }
+
+  const lastTrack = localStorage.getItem("last-music-track");
   const choices = tracks.filter((track) => track !== lastTrack);
   const selected = choices[Math.floor(Math.random() * choices.length)] || tracks[0];
-  sessionStorage.setItem("last-music-track", selected);
+  localStorage.setItem("last-music-track", selected);
   return selected;
 }
 
