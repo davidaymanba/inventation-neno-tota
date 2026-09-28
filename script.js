@@ -9,6 +9,10 @@ const CONFIG = {
   receptionTime: "TIME TO BE ANNOUNCED",
   timeZone: "Africa/Cairo",
   musicPath: "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
+  musicPlaylist: [
+    "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
+    "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1"
+  ],
   heroPhoto: "صورة الخطوبة.jpeg",
   heroPortraits: {
     groom: {
@@ -762,6 +766,18 @@ function updateLightbox() {
   $("#photoCounter").textContent = `${formatNumber(activePhoto + 1)} / ${formatNumber(CONFIG.photos.length)}`;
 }
 
+function pickMusicTrack() {
+  const tracks = (CONFIG.musicPlaylist?.length ? CONFIG.musicPlaylist : [CONFIG.musicPath]).filter(Boolean);
+  if (!tracks.length) return "";
+  if (tracks.length === 1) return tracks[0];
+
+  const lastTrack = sessionStorage.getItem("last-music-track");
+  const choices = tracks.filter((track) => track !== lastTrack);
+  const selected = choices[Math.floor(Math.random() * choices.length)] || tracks[0];
+  sessionStorage.setItem("last-music-track", selected);
+  return selected;
+}
+
 $("#lightboxClose").addEventListener("click", closeLightbox);
 $("#lightboxPrev").addEventListener("click", () => moveLightbox(-1));
 $("#lightboxNext").addEventListener("click", () => moveLightbox(1));
@@ -785,11 +801,12 @@ document.addEventListener("keydown", (event) => {
 function initMusic() {
   const player = $("#musicPlayer");
   const toggle = $("#musicToggle");
-  if (!CONFIG.musicPath) {
+  const selectedTrack = pickMusicTrack();
+  if (!selectedTrack) {
     toggle.hidden = true;
     return;
   }
-  player.src = CONFIG.musicPath;
+  player.src = selectedTrack;
   player.volume = 0.72;
 
   const startMusic = async () => {
