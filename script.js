@@ -11,7 +11,9 @@ const CONFIG = {
   musicPath: "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
   musicPlaylist: [
     "Albumaty.Com_mhmwd_alasyly_wakhyra__-_mslsl_atnyn_ghyrna_-_ma_sabryn (1).mp3?v=1",
-    "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1"
+    "Albumaty.Com_hysm_shakr_hkaytna_kmlt.mp3?v=1",
+    "Albumaty.Com_ramy_sbri_ahsasy_maak.mp3?v=1",
+    "13._Helm_Seneen.mp3?v=1"
   ],
   heroPhoto: "صورة الخطوبة.jpeg",
   heroPortraits: {
@@ -128,6 +130,12 @@ const CONFIG = {
       text: "The day is getting closer, and every step now carries more excitement, more gratitude, and more love."
     },
     {
+      title: "Our Home Is Getting Ready",
+      date: "Our furniture day",
+      photo: "العفش.jpeg",
+      text: "A sweet step toward the life we are building together, our furniture, our home, and the beginning of many warm days to come."
+    },
+    {
       title: "See You On Our Wedding Day",
       date: "3 October 2026",
       photo: "الصورة الختامية .jpeg",
@@ -236,6 +244,7 @@ const I18N = {
       { title: "Her Beautiful Birthday", date: "21 January 2026", text: "The birthday of my moon, a day made for celebrating her smile, her heart, and the gift of having her near." },
       { title: "Our First Slow Dance", date: "A tender moment", text: "Finally, we danced slowly, and for a moment everything around us felt quiet except the joy between us." },
       { title: "It Is Getting Close", date: "Almost there", text: "The day is getting closer, and every step now carries more excitement, more gratitude, and more love." },
+      { title: "Our Home Is Getting Ready", date: "Our furniture day", text: "A sweet step toward the life we are building together, our furniture, our home, and the beginning of many warm days to come." },
       { title: "See You On Our Wedding Day", date: "3 October 2026", text: "After every chapter, every laugh, and every promise, we will be waiting for you to share our joy on 3 October 2026." }
     ],
     scriptureVerses: [
@@ -312,6 +321,7 @@ const I18N = {
       { title: "عيد ميلاد القمر حقي", date: "٢١ يناير ٢٠٢٦", text: "عيد ميلاد قمري، يوم نفرح فيه بابتسامتها وقلبها ووجودها اللي منور حياتي." },
       { title: "أخيرًا رقصنا سلو", date: "لحظة هادية", text: "أخيرًا رقصنا سلو، وللحظة حسينا إن كل حاجة حواليّنا هديت إلا الفرحة اللي بينا." },
       { title: "إنها تقترب", date: "قربت جدًا", text: "اليوم بيقرب، وكل خطوة بقت شايلة حماس أكتر وشكر أكتر ومحبة أكتر." },
+      { title: "العفشة بتاعتنا", date: "بيتنا بيجهز", text: "خطوة حلوة ناحية البيت اللي بنبنيه سوا، العفشة بتاعتنا وبداية أيام دافية كتير جاية." },
       { title: "نتقابل يوم فرحنا", date: "٣ أكتوبر ٢٠٢٦", text: "بعد كل فصل وكل ضحكة وكل وعد، هنستناكم تشاركونا فرحتنا يوم ٣ أكتوبر ٢٠٢٦." }
     ],
     scriptureVerses: [

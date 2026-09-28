@@ -125,6 +125,13 @@
         "text": "The day is getting closer, and every step now carries more excitement, more gratitude, and more love."
       },
       {
+        "title": "Our Home Is Getting Ready",
+        "date": "Our furniture day",
+        "photo": "العفش.jpeg",
+        "text": "A sweet step toward the life we are building together, our furniture, our home, and the beginning of many warm days to come.",
+        "position": "50% 35%"
+      },
+      {
         "title": "See You On Our Wedding Day",
         "date": "3 October 2026",
         "photo": "الصورة الختامية .jpeg",
@@ -554,6 +561,11 @@
           "text": "The day is getting closer, and every step now carries more excitement, more gratitude, and more love."
         },
         {
+          "title": "Our Home Is Getting Ready",
+          "date": "Our furniture day",
+          "text": "A sweet step toward the life we are building together, our furniture, our home, and the beginning of many warm days to come."
+        },
+        {
           "title": "See You On Our Wedding Day",
           "date": "3 October 2026",
           "text": "After every chapter, every laugh, and every promise, we will be waiting for you to share our joy on 3 October 2026."
@@ -719,6 +731,11 @@
           "title": "إنها تقترب",
           "date": "قربت جدًا",
           "text": "اليوم بيقرب، وكل خطوة بقت شايلة حماس أكتر وشكر أكتر ومحبة أكتر."
+        },
+        {
+          "title": "العفشة بتاعتنا",
+          "date": "بيتنا بيجهز",
+          "text": "خطوة حلوة ناحية البيت اللي بنبنيه سوا، العفشة بتاعتنا وبداية أيام دافية كتير جاية."
         },
         {
           "title": "نتقابل يوم فرحنا",
