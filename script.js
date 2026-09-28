@@ -269,6 +269,7 @@ const doorVideo = $("#doorVideo");
 let knockCount = 0;
 let opened = false;
 let openingFallback;
+let autoKnockTimer;
 
 function setText(selector, value) {
   const node = $(selector);
@@ -356,8 +357,7 @@ function playKnock() {
   setTimeout(() => context.close(), 220);
 }
 
-doorKnocker.addEventListener("click", async () => {
-  if (opened || doorScreen.classList.contains("opening")) return;
+function performKnock() {
   knockCount += 1;
   playKnock();
   doorKnocker.classList.remove("knocked");
@@ -366,9 +366,10 @@ doorKnocker.addEventListener("click", async () => {
   document.querySelectorAll(".knock-dots span").forEach((dot, index) => {
     dot.classList.toggle("active", index < knockCount);
   });
+}
 
-  if (knockCount < 3) return;
-
+async function openDoor() {
+  if (opened || doorScreen.classList.contains("opening")) return;
   doorScreen.classList.add("opening");
   try {
     doorVideo.currentTime = 0;
@@ -378,7 +379,29 @@ doorKnocker.addEventListener("click", async () => {
   } catch (error) {
     setTimeout(revealInvitation, 900);
   }
+}
+
+doorKnocker.addEventListener("click", async () => {
+  if (opened || doorScreen.classList.contains("opening")) return;
+  clearTimeout(autoKnockTimer);
+  performKnock();
+  if (knockCount >= 3) await openDoor();
 });
+
+function initAutoKnock() {
+  autoKnockTimer = setTimeout(() => {
+    if (opened || doorScreen.classList.contains("opening") || knockCount > 0) return;
+
+    const knockSteps = [0, 420, 840];
+    knockSteps.forEach((delay, index) => {
+      setTimeout(() => {
+        if (opened || doorScreen.classList.contains("opening") || knockCount > index) return;
+        performKnock();
+        if (knockCount >= 3) openDoor();
+      }, delay);
+    });
+  }, 3000);
+}
 
 doorVideo.addEventListener("ended", () => {
   clearTimeout(openingFallback);
@@ -735,3 +758,4 @@ applyLanguage("en");
 doorScreen.classList.add("language-selected");
 initMusic();
 initCursor();
+initAutoKnock();
