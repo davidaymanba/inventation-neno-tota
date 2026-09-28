@@ -978,6 +978,36 @@ h2 {
   text-transform: uppercase;
 }
 
+.creator-credit {
+  display: inline-grid;
+  gap: .25rem;
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(200, 169, 106, .35);
+  color: rgba(255, 253, 248, .72);
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.creator-credit strong {
+  color: var(--soft-white);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: .08em;
+}
+
+.creator-credit a {
+  color: var(--champagne-gold);
+  text-decoration: none;
+}
+
+.creator-credit a:hover,
+.creator-credit a:focus-visible {
+  color: var(--soft-white);
+}
+
 .music-toggle {
   position: fixed;
   right: 1rem;
