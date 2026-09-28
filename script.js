@@ -363,6 +363,14 @@ const formatNumber = (value, minDigits = 1) => {
   return currentLang === "ar" ? padded.replace(/\d/g, (digit) => "٠١٢٣٤٥٦٧٨٩"[digit]) : padded;
 };
 
+function resetPagePosition() {
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (location.hash) history.replaceState(null, "", `${location.pathname}${location.search}`);
+  window.scrollTo(0, 0);
+  requestAnimationFrame(() => window.scrollTo(0, 0));
+}
+
+resetPagePosition();
 document.body.classList.add("locked");
 
 const doorScreen = $("#doorScreen");
@@ -468,10 +476,12 @@ function applyLanguage(lang) {
 function revealInvitation() {
   if (opened) return;
   opened = true;
+  resetPagePosition();
   doorScreen.classList.add("opened");
   invitation.classList.add("visible");
   invitation.setAttribute("aria-hidden", "false");
   document.body.classList.remove("locked");
+  requestAnimationFrame(() => window.scrollTo(0, 0));
 }
 
 function playKnock() {
@@ -825,9 +835,11 @@ function initMusic() {
   }
   player.src = selectedTrack;
   player.volume = 0.72;
+  player.currentTime = 0;
 
   const startMusic = async () => {
     try {
+      if (player.currentTime > 0 && player.paused) player.currentTime = 0;
       await player.play();
       toggle.setAttribute("aria-pressed", "true");
     } catch (error) {
